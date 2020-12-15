@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <a v-scrollanimation class="btn" href="https://github.com/rixzkl"
+    <a v-scrollanimation class="btn" href="https://github.com/rizkhal"
       >See All</a
     >
   </section>
