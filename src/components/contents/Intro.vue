@@ -3,7 +3,7 @@
     <div class="intro">
       <h2 class="hi">Hi, nama saya adalah</h2>
       <h1 class="name">Muhammad RIzkhal Lamaau.</h1>
-      <h1 class="build">Web Developer Amatiran.</h1>
+      <h1 class="build">Full Stack Web Developer.</h1>
 
       <a class="btn" href="mailto:lamaaurizkhal@gmail.com">Say Hello</a>
     </div>
