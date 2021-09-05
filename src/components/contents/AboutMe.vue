@@ -8,7 +8,7 @@
         </h1>
 
         <p v-scrollanimation class="aboutme_body">
-          Halo! saya <span class="color-accent">Muhammad Rizkhal Lamaau</span>, seorang Web Developer <span class="color-accent">Amatiran</span> yang tinggal di <span class="color-accent">Ternate</span>.
+          Halo! saya <span class="color-accent">Muhammad Rizkhal Lamaau</span>, seorang Full Stack Web Developer yang tinggal di <span class="color-accent">Ternate</span>.
           Sekarang saya bekerja sebagai <span class="color-accent">Freelance</span>. 
           Setiap hari saya menghabiskan waktu di kamar untuk mempelajari hal baru atau sekedar menonton <span class="color-accent">Anime</span> dan membaca <span class="color-accent">Komik</span> atau hal - hal aneh di <span class="color-accent">Internet</span>.
         </p>
