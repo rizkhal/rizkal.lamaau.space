@@ -1,9 +1,6 @@
 <template>
   <footer class="footer">
-    <a href="https://github.com/FocusThen/MyPortfolio-Vue" class="credit"
-      >Muhammad Rizkhal Lamaau</a
-    >
-    Template By <a href="https://brittanychiang.com/" target="blank" class="credit">Brittany Chiang</a>
+    <span style="color: #fff;">Template By</span><a href="https://brittanychiang.com/" target="blank" class="credit">Brittany Chiang</a>
   </footer>
 </template>
 
