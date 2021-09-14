@@ -3,6 +3,8 @@
     <a href="https://github.com/FocusThen/MyPortfolio-Vue" class="credit"
       >Muhammad Rizkhal Lamaau</a
     >
+    Template By <a href="https://brittanychiang.com/" target="blank">Avatar
+Brittany Chiang </a>
   </footer>
 </template>
 
