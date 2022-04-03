@@ -1,6 +1,9 @@
 <template>
   <footer class="footer">
-    <span style="color: #fff;">Template By</span><a href="https://brittanychiang.com/" target="blank" class="credit">Brittany Chiang</a>
+    <span style="color: #fff">Template By</span
+    ><a href="https://brittanychiang.com/" target="blank" class="credit"
+      >Brittany Chiang</a
+    >
   </footer>
 </template>
 
