@@ -4,7 +4,7 @@
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="text-base font-semibold text-pink-500 dark:text-pink-200 md:text-xl">
-            Hy theree 👋, i'am
+            Hy theree 👋, i'm
             <span class="block font-bold text-gray-900 dark:text-pink-500 text-4xl mt-1 lg:text-5xl">Rizkhal Lamaau</span>
           </h1>
           <h2 class="font-light text-secondary text-lg mb-5 lg:text-2xl text-gray-500 dark:text-pink-200">Web Developer</h2>
