@@ -2,7 +2,7 @@
   <div class="bg-white dark:bg-gray-900 pb-[50px]">
     <div class="container mx-auto px-10">
       <h1 class="text-gray-900 dark:text-pink-500 text-2xl font-bold">Portfolio</h1>
-      <p class="text-gray-600 dark:text-pink-200 font-light">Opensource Projects i'am already build</p>
+      <p class="text-gray-600 dark:text-pink-200 font-light">Opensource Projects i'm already build</p>
 
       <div class="mt-8 grid lg:grid-cols-2 grid-cols-1 gap-4">
         <div v-for="(project, index) in projects" :key="index" class="bg-gray-200 shadow border dark:border-none dark:bg-pink-200 rounded p-4">
