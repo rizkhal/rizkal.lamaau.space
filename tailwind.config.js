@@ -1,5 +1,9 @@
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,vue}'],
+  content: [
+    /* eslint-disable */
+    './index.html',
+    './src/**/*.{js,vue}',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
