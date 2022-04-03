@@ -3,6 +3,7 @@
     <Header @changeTheme="handleChangeTheme" :dark="dark" />
     <Landing />
     <Projects />
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from '~/components/header.vue'
 import Landing from '~/components/landing.vue'
 import Projects from '~/components/projects.vue'
+import Footer from '~/components/footer.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Header,
     Landing,
     Projects,
+    Footer,
   },
   data: () => ({
     dark: false,

@@ -8,6 +8,8 @@ const actions = {
   async setItems(state) {
     const { data } = await axios.get('https://api.github.com/orgs/codegoen/repos')
 
+    console.log(data)
+
     state.commit('setItems', data)
   },
 }
