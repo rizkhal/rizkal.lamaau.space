@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   productionSourceMap: false,
 
@@ -8,6 +10,14 @@ module.exports = {
       useRenderEvent: true,
       headless: true,
       onlyProduction: true,
+    },
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '~': path.resolve(__dirname, './src'),
+      },
+      extensions: ['.js', '.vue', '.json'],
     },
   },
 }
