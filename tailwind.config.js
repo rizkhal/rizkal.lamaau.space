@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+        mubarak: ['Cinzel Decorative'],
       },
     },
   },
