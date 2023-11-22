@@ -1,0 +1,112 @@
+---
+title: "Manage form input like a pro with vue3 composable"
+publishDate: "13 Oct 2023"
+description: "Don't repeat your self with model state and error state in every component"
+tags: ["javascript", "vue"]
+---
+
+Vue3 composables concept is powerfull to handle reusable and reactivity state.
+You can extract logic into composable even for single use case,
+that's will make your components looks simple and easier to understand and maintainable.
+
+```javascript
+import { ref, watch } from 'vue';
+
+export function useCounter(initialValue: number) {
+  const count = ref(initialValue);
+
+  const increment = () => {
+    count.value++;
+  };
+  const decrement = () => {
+    count.value--;
+  };
+
+  watch(count, (newValue, oldValue) => {
+    console.log(`Count changed from ${oldValue} to ${newValue}`);
+  });
+
+  return { count, increment, decrement };
+}
+```
+
+```vue
+<script setup>
+  import { useCounter } from './useCounter';
+  const { count, increment, decrement } = useCounter(0);
+</script>
+<template>
+  <div>
+    <button @click="decrement">-</button>
+    <p>Count: {{ count }}</p>
+    <button @click="increment">+</button>
+  </div>
+</template>
+```
+
+Look at the example above, your components is clean and easy to understand with composables. That's just an tiny example of counter state, you have method `increment`, `decrement` and reactive `counter` state, it's reusable and ~~fucking~~ good to maintain.
+
+> How about manage form like a pro?
+
+```javascript
+import { reactive } from "vue";
+
+export default function useForm(fields) {
+    const form = reactive({
+        fields,
+        errors: null,
+        processing: false,
+        async submit(submitter) {
+            if (this.processing) return;
+
+            this.errors = null;
+            this.processing = true;
+
+            try {
+                await submitter(this.fields);
+            } catch (err) {
+                this.errors = err.response.data.errors;
+            } finally {
+                this.processing = false;
+            }
+        },
+    });
+
+    return form;
+}
+```
+
+```vue
+<script setup>
+import axios from 'axios';
+import { useForm } from './useForm';
+
+const form = useForm({
+    name: null,
+    role: null,
+});
+
+const submit = async () => {
+  await form.submit(async (fields) => {
+      await axios.post(`api/profile`, fields);
+  });
+};
+</script>
+<template>
+    <form @submit.prevent="submit">
+        <div>
+            <input v-model="form.fields.name" />
+            <span v-show="form.errors?.name">{{ form.errors?.name }}</span>
+        </div>
+        <div>
+            <input v-model="form.fields.name" />
+            <span v-show="form.errors?.name">{{ form.errors?.name }}</span>
+        </div>
+        <div>
+            <button type="submit" :disabled="form.processing">submit</button>
+        </div>
+    </form>
+</template>
+```
+
+Look, this is very simple? You've even indirectly applied the __Don't Repeat Yourself (DRY)__ concept with composability.
