@@ -10,6 +10,9 @@
 		"format": "prettier -w --cache .",
 		"check": "astro check"
 	},
+	"engines": {
+		"node": "20.x"
+	},
 	"dependencies": {
 		"@astrojs/mdx": "^1.1.1",
 		"@astrojs/prefetch": "^0.4.1",
