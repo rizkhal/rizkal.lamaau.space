@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
+            ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.3.1"],\
             ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
             ["@astrojs/rss", "npm:3.0.0"],\
@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["satori-html", "npm:0.3.2"],\
             ["sharp", "npm:0.32.6"],\
             ["tailwindcss", "npm:3.3.5"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -101,23 +101,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@astrojs/check", [\
-        ["npm:0.2.1", {\
-          "packageLocation": "./.yarn/cache/@astrojs-check-npm-0.2.1-41eee94bdb-283a77e0bf.zip/node_modules/@astrojs/check/",\
+        ["npm:0.3.1", {\
+          "packageLocation": "./.yarn/cache/@astrojs-check-npm-0.3.1-b3769ee456-190c962772.zip/node_modules/@astrojs/check/",\
           "packageDependencies": [\
-            ["@astrojs/check", "npm:0.2.1"]\
+            ["@astrojs/check", "npm:0.3.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1", {\
-          "packageLocation": "./.yarn/__virtual__/@astrojs-check-virtual-cedf6e4be3/0/cache/@astrojs-check-npm-0.2.1-41eee94bdb-283a77e0bf.zip/node_modules/@astrojs/check/",\
+        ["virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/@astrojs-check-virtual-8cd9d4da67/0/cache/@astrojs-check-npm-0.3.1-b3769ee456-190c962772.zip/node_modules/@astrojs/check/",\
           "packageDependencies": [\
-            ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
-            ["@astrojs/language-server", "virtual:cedf6e4be3f27316a36e73666b3bd80fc71e741ceaa357973bfa3f725c452ccc8792987843b5beaf95b5442a3f659404376002d97efba834a6a4bddd48c3b864#npm:2.5.2"],\
+            ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.3.1"],\
+            ["@astrojs/language-server", "virtual:8cd9d4da67cea48d4af5155af1a6372193359f745479b739f6f1624a241310ac8f42fc536594a3a9fe17964f1869b445eac6e0afee1c5852b4e7625bb0d8ac70#npm:2.5.2"],\
             ["@types/typescript", null],\
             ["chokidar", "npm:3.5.3"],\
             ["fast-glob", "npm:3.3.2"],\
             ["kleur", "npm:4.1.5"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"],\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"],\
             ["yargs", "npm:17.7.2"]\
           ],\
           "packagePeers": [\
@@ -160,15 +160,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:cedf6e4be3f27316a36e73666b3bd80fc71e741ceaa357973bfa3f725c452ccc8792987843b5beaf95b5442a3f659404376002d97efba834a6a4bddd48c3b864#npm:2.5.2", {\
-          "packageLocation": "./.yarn/__virtual__/@astrojs-language-server-virtual-5994770c3b/0/cache/@astrojs-language-server-npm-2.5.2-216d29ca69-5185a8f3ce.zip/node_modules/@astrojs/language-server/",\
+        ["virtual:8cd9d4da67cea48d4af5155af1a6372193359f745479b739f6f1624a241310ac8f42fc536594a3a9fe17964f1869b445eac6e0afee1c5852b4e7625bb0d8ac70#npm:2.5.2", {\
+          "packageLocation": "./.yarn/__virtual__/@astrojs-language-server-virtual-23acb022db/0/cache/@astrojs-language-server-npm-2.5.2-216d29ca69-5185a8f3ce.zip/node_modules/@astrojs/language-server/",\
           "packageDependencies": [\
-            ["@astrojs/language-server", "virtual:cedf6e4be3f27316a36e73666b3bd80fc71e741ceaa357973bfa3f725c452ccc8792987843b5beaf95b5442a3f659404376002d97efba834a6a4bddd48c3b864#npm:2.5.2"],\
+            ["@astrojs/language-server", "virtual:8cd9d4da67cea48d4af5155af1a6372193359f745479b739f6f1624a241310ac8f42fc536594a3a9fe17964f1869b445eac6e0afee1c5852b4e7625bb0d8ac70#npm:2.5.2"],\
             ["@astrojs/compiler", "npm:2.3.2"],\
             ["@jridgewell/sourcemap-codec", "npm:1.4.15"],\
             ["@types/prettier", null],\
             ["@types/prettier-plugin-astro", null],\
-            ["@volar/kit", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:1.10.10"],\
+            ["@volar/kit", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:1.10.10"],\
             ["@volar/language-core", "npm:1.10.10"],\
             ["@volar/language-server", "npm:1.10.10"],\
             ["@volar/language-service", "npm:1.10.10"],\
@@ -178,12 +178,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["muggle-string", "npm:0.3.1"],\
             ["prettier", null],\
             ["prettier-plugin-astro", null],\
-            ["volar-service-css", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
-            ["volar-service-emmet", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
-            ["volar-service-html", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
-            ["volar-service-prettier", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
-            ["volar-service-typescript", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
-            ["volar-service-typescript-twoslash-queries", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-css", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
+            ["volar-service-emmet", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
+            ["volar-service-html", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
+            ["volar-service-prettier", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
+            ["volar-service-typescript", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
+            ["volar-service-typescript-twoslash-queries", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["vscode-html-languageservice", "npm:5.1.1"],\
             ["vscode-uri", "npm:3.0.8"]\
           ],\
@@ -1927,7 +1927,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["natural-compare", "npm:1.4.0"],\
             ["semver", "npm:7.5.4"],\
             ["ts-api-utils", "virtual:f700ea0a1f7910931a3eb5a99406541e1c6f41f02c35450a55e0a4a3e329b28e1e75f3e555ae943a48315dd33fb2884c92cd1f20a4d5ba9e12d5b23e687d13e5#npm:1.0.3"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -1960,7 +1960,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/visitor-keys", "npm:6.12.0"],\
             ["debug", "virtual:fac5ca3376ee59365d07e8a1b07e947814efe6fb13c93a96ec0d9ba88716e2260780e2e076b3a60116c110c8332de0550df03424ae943028a713243a526e323d#npm:4.3.4"],\
             ["eslint", "npm:8.54.0"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2010,7 +2010,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:fac5ca3376ee59365d07e8a1b07e947814efe6fb13c93a96ec0d9ba88716e2260780e2e076b3a60116c110c8332de0550df03424ae943028a713243a526e323d#npm:4.3.4"],\
             ["eslint", "npm:8.54.0"],\
             ["ts-api-utils", "virtual:f700ea0a1f7910931a3eb5a99406541e1c6f41f02c35450a55e0a4a3e329b28e1e75f3e555ae943a48315dd33fb2884c92cd1f20a4d5ba9e12d5b23e687d13e5#npm:1.0.3"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2077,7 +2077,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-glob", "npm:4.0.3"],\
             ["semver", "npm:7.5.4"],\
             ["ts-api-utils", "virtual:f700ea0a1f7910931a3eb5a99406541e1c6f41f02c35450a55e0a4a3e329b28e1e75f3e555ae943a48315dd33fb2884c92cd1f20a4d5ba9e12d5b23e687d13e5#npm:1.0.3"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -2152,10 +2152,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:1.10.10", {\
-          "packageLocation": "./.yarn/__virtual__/@volar-kit-virtual-f48e7aef3c/0/cache/@volar-kit-npm-1.10.10-230d34bb02-4a4bbda8d2.zip/node_modules/@volar/kit/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:1.10.10", {\
+          "packageLocation": "./.yarn/__virtual__/@volar-kit-virtual-f0ffae1bd8/0/cache/@volar-kit-npm-1.10.10-230d34bb02-4a4bbda8d2.zip/node_modules/@volar/kit/",\
           "packageDependencies": [\
-            ["@volar/kit", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:1.10.10"],\
+            ["@volar/kit", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:1.10.10"],\
             ["@types/typescript", null],\
             ["@volar/language-service", "npm:1.10.10"],\
             ["typesafe-path", "npm:0.2.2"],\
@@ -2634,7 +2634,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["astro-cactus", "workspace:."],\
-            ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
+            ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.3.1"],\
             ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
             ["@astrojs/rss", "npm:3.0.0"],\
@@ -2672,7 +2672,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["satori-html", "npm:0.3.2"],\
             ["sharp", "npm:0.32.6"],\
             ["tailwindcss", "npm:3.3.5"],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -10074,7 +10074,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["ts-api-utils", "virtual:f700ea0a1f7910931a3eb5a99406541e1c6f41f02c35450a55e0a4a3e329b28e1e75f3e555ae943a48315dd33fb2884c92cd1f20a4d5ba9e12d5b23e687d13e5#npm:1.0.3"],\
             ["@types/typescript", null],\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -10233,10 +10233,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-7bc6417633-c034461079.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-a2230ecad6-47b2e63418.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=29ae49"]\
+            ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10691,10 +10691,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16", {\
-          "packageLocation": "./.yarn/__virtual__/volar-service-css-virtual-afe8f220e7/0/cache/volar-service-css-npm-0.0.16-60b497b2da-38ebd959d3.zip/node_modules/volar-service-css/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16", {\
+          "packageLocation": "./.yarn/__virtual__/volar-service-css-virtual-453495019f/0/cache/volar-service-css-npm-0.0.16-60b497b2da-38ebd959d3.zip/node_modules/volar-service-css/",\
           "packageDependencies": [\
-            ["volar-service-css", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-css", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["@types/volar__language-service", null],\
             ["@volar/language-service", "npm:1.10.10"],\
             ["vscode-css-languageservice", "npm:6.2.10"],\
@@ -10715,14 +10715,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16", {\
-          "packageLocation": "./.yarn/__virtual__/volar-service-emmet-virtual-427ad7405b/0/cache/volar-service-emmet-npm-0.0.16-c7a290c538-7a2ab0c33c.zip/node_modules/volar-service-emmet/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16", {\
+          "packageLocation": "./.yarn/__virtual__/volar-service-emmet-virtual-8c0ebf0ddd/0/cache/volar-service-emmet-npm-0.0.16-c7a290c538-7a2ab0c33c.zip/node_modules/volar-service-emmet/",\
           "packageDependencies": [\
-            ["volar-service-emmet", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-emmet", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["@types/volar__language-service", null],\
             ["@volar/language-service", "npm:1.10.10"],\
             ["@vscode/emmet-helper", "npm:2.9.2"],\
-            ["volar-service-html", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"]\
+            ["volar-service-html", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"]\
           ],\
           "packagePeers": [\
             "@types/volar__language-service",\
@@ -10739,10 +10739,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16", {\
-          "packageLocation": "./.yarn/__virtual__/volar-service-html-virtual-6c648d9b0a/0/cache/volar-service-html-npm-0.0.16-5a99a1528a-0757926eea.zip/node_modules/volar-service-html/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16", {\
+          "packageLocation": "./.yarn/__virtual__/volar-service-html-virtual-c07165c989/0/cache/volar-service-html-npm-0.0.16-5a99a1528a-0757926eea.zip/node_modules/volar-service-html/",\
           "packageDependencies": [\
-            ["volar-service-html", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-html", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["@types/volar__language-service", null],\
             ["@volar/language-service", "npm:1.10.10"],\
             ["vscode-html-languageservice", "npm:5.1.1"],\
@@ -10763,10 +10763,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16", {\
-          "packageLocation": "./.yarn/__virtual__/volar-service-prettier-virtual-b7fa675a43/0/cache/volar-service-prettier-npm-0.0.16-da803ac0fc-e7af72ac42.zip/node_modules/volar-service-prettier/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16", {\
+          "packageLocation": "./.yarn/__virtual__/volar-service-prettier-virtual-56fb8e23fa/0/cache/volar-service-prettier-npm-0.0.16-da803ac0fc-e7af72ac42.zip/node_modules/volar-service-prettier/",\
           "packageDependencies": [\
-            ["volar-service-prettier", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-prettier", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["@types/prettier", null],\
             ["@types/volar__language-service", null],\
             ["@volar/language-service", "npm:1.10.10"],\
@@ -10789,10 +10789,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16", {\
-          "packageLocation": "./.yarn/__virtual__/volar-service-typescript-virtual-3d2935e804/0/cache/volar-service-typescript-npm-0.0.16-72167d072c-32d3652110.zip/node_modules/volar-service-typescript/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16", {\
+          "packageLocation": "./.yarn/__virtual__/volar-service-typescript-virtual-ebf3edca77/0/cache/volar-service-typescript-npm-0.0.16-72167d072c-32d3652110.zip/node_modules/volar-service-typescript/",\
           "packageDependencies": [\
-            ["volar-service-typescript", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-typescript", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["@types/volar__language-service", null],\
             ["@types/volar__typescript", null],\
             ["@volar/language-service", "npm:1.10.10"],\
@@ -10821,10 +10821,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16", {\
-          "packageLocation": "./.yarn/__virtual__/volar-service-typescript-twoslash-queries-virtual-287fc06814/0/cache/volar-service-typescript-twoslash-queries-npm-0.0.16-bedf1372d0-50f71690ac.zip/node_modules/volar-service-typescript-twoslash-queries/",\
+        ["virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16", {\
+          "packageLocation": "./.yarn/__virtual__/volar-service-typescript-twoslash-queries-virtual-68338c4378/0/cache/volar-service-typescript-twoslash-queries-npm-0.0.16-bedf1372d0-50f71690ac.zip/node_modules/volar-service-typescript-twoslash-queries/",\
           "packageDependencies": [\
-            ["volar-service-typescript-twoslash-queries", "virtual:5994770c3bc2716db6a75ce647a6b814cd94e26ee172752289cb8984a1d1dc6385d20b7dce1a421d2d575f8f264cdea9817d054d7b79be71330579d38426dc27#npm:0.0.16"],\
+            ["volar-service-typescript-twoslash-queries", "virtual:23acb022dbda75875779e8471eb52fd06e850778512131102d0724566da1806dbc131b94cee32433d82ba64ad3eaf171a1acc45698b09fe7b5f16d5e5547b0f5#npm:0.0.16"],\
             ["@types/volar__language-service", null],\
             ["@volar/language-service", "npm:1.10.10"]\
           ],\
@@ -21742,7 +21742,7 @@ function makeManager(pnpapi, opts) {
     apiEntry.lastRefreshCheck = timeNow;
     const stats = opts.fakeFs.statSync(pnpApiPath);
     if (stats.mtime > apiEntry.stats.mtime) {
-      process.emitWarning(`[Warning] The runtime detected new informations in a PnP file; reloading the API instance (${npath.fromPortablePath(pnpApiPath)})`);
+      process.emitWarning(`[Warning] The runtime detected new information in a PnP file; reloading the API instance (${npath.fromPortablePath(pnpApiPath)})`);
       apiEntry.stats = stats;
       apiEntry.instance = loadApiInstance(pnpApiPath);
     }
