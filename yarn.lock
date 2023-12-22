@@ -2046,7 +2046,7 @@ __metadata:
     eslint: ^8.50.0
     eslint-config-prettier: ^9.0.0
     eslint-import-resolver-typescript: ^3.6.1
-    eslint-plugin-astro: ^0.29.1
+    eslint-plugin-astro: ^0.31.0
     eslint-plugin-import: ^2.28.1
     eslint-plugin-jsx-a11y: ^6.7.1
     eslint-plugin-prettier: ^5.0.0
@@ -3486,6 +3486,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-compat-utils@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "eslint-compat-utils@npm:0.1.2"
+  peerDependencies:
+    eslint: ">=6.0.0"
+  checksum: 2315d9db81efb7f58808053bf32a1d5970b38e01cd8244f4f1b5aa05d883255c5c93fc184e9c29a0e7e2dcf16ff16330977302474d3fa870e41c5bed9c66f76b
+  languageName: node
+  linkType: hard
+
 "eslint-config-prettier@npm:^9.0.0":
   version: 9.0.0
   resolution: "eslint-config-prettier@npm:9.0.0"
@@ -3538,19 +3547,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:^0.29.1":
-  version: 0.29.1
-  resolution: "eslint-plugin-astro@npm:0.29.1"
+"eslint-plugin-astro@npm:^0.31.0":
+  version: 0.31.0
+  resolution: "eslint-plugin-astro@npm:0.31.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@jridgewell/sourcemap-codec": ^1.4.14
     "@typescript-eslint/types": ^5.25.0
     astro-eslint-parser: ^0.16.0
+    eslint-compat-utils: ^0.1.2
     postcss: ^8.4.14
     postcss-selector-parser: ^6.0.10
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: 16314fe63866f7e764214545626f80b2a645b20d87b5d05565da33d6576c8f8153725bb3d568c906e7475645c64630c5731f9790ace608df39a3e2611c4a62ca
+  checksum: 17eea29f029e52b77be75927245f0744f4f4d84da239b43337b60d6fceb6d9622f4309f008ecf45a676a748d170c39c60bd00f900e57ad09614bfdadc7db8b48
   languageName: node
   linkType: hard
 
