@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-html", "npm:1.5.0"],\
             ["postcss-import", "virtual:a3fffa234cfde0647eca0c809a1b814dd7d5ff3a7d6caba1cfa80dec5048f7ee0445c69f0d8857c49b1d82131b8323778d8b3b0c4758a59042516948a8168858#npm:15.1.0"],\
             ["prettier", "npm:3.1.0"],\
-            ["prettier-plugin-astro", "npm:0.12.0"],\
+            ["prettier-plugin-astro", "npm:0.12.3"],\
             ["prettier-plugin-tailwindcss", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.5.7"],\
             ["reading-time", "npm:1.5.0"],\
             ["remark-unwrap-images", "npm:4.0.0"],\
@@ -2664,7 +2664,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-html", "npm:1.5.0"],\
             ["postcss-import", "virtual:a3fffa234cfde0647eca0c809a1b814dd7d5ff3a7d6caba1cfa80dec5048f7ee0445c69f0d8857c49b1d82131b8323778d8b3b0c4758a59042516948a8168858#npm:15.1.0"],\
             ["prettier", "npm:3.1.0"],\
-            ["prettier-plugin-astro", "npm:0.12.0"],\
+            ["prettier-plugin-astro", "npm:0.12.3"],\
             ["prettier-plugin-tailwindcss", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.5.7"],\
             ["reading-time", "npm:1.5.0"],\
             ["remark-unwrap-images", "npm:4.0.0"],\
@@ -8544,10 +8544,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier-plugin-astro", [\
-        ["npm:0.12.0", {\
-          "packageLocation": "./.yarn/cache/prettier-plugin-astro-npm-0.12.0-b74ec9e640-7282c8fed9.zip/node_modules/prettier-plugin-astro/",\
+        ["npm:0.12.3", {\
+          "packageLocation": "./.yarn/cache/prettier-plugin-astro-npm-0.12.3-5d93cc3feb-b713d78795.zip/node_modules/prettier-plugin-astro/",\
           "packageDependencies": [\
-            ["prettier-plugin-astro", "npm:0.12.0"],\
+            ["prettier-plugin-astro", "npm:0.12.3"],\
             ["@astrojs/compiler", "npm:1.8.2"],\
             ["prettier", "npm:3.1.0"],\
             ["sass-formatter", "npm:0.7.8"]\
@@ -8589,7 +8589,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/shufo__prettier-plugin-blade", null],\
             ["@types/trivago__prettier-plugin-sort-imports", null],\
             ["prettier", "npm:3.1.0"],\
-            ["prettier-plugin-astro", "npm:0.12.0"],\
+            ["prettier-plugin-astro", "npm:0.12.3"],\
             ["prettier-plugin-css-order", null],\
             ["prettier-plugin-import-sort", null],\
             ["prettier-plugin-jsdoc", null],\
