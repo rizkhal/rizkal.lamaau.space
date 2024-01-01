@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
-            ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
+            ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:2.0.3"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
             ["@astrojs/rss", "npm:3.0.0"],\
             ["@astrojs/sitemap", "npm:3.0.3"],\
@@ -204,12 +204,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["npm:3.5.0", {\
-          "packageLocation": "./.yarn/cache/@astrojs-markdown-remark-npm-3.5.0-51ebbb3305-991e41551f.zip/node_modules/@astrojs/markdown-remark/",\
+        ["npm:4.0.1", {\
+          "packageLocation": "./.yarn/cache/@astrojs-markdown-remark-npm-4.0.1-b9e89548f4-309fa2c9c9.zip/node_modules/@astrojs/markdown-remark/",\
           "packageDependencies": [\
-            ["@astrojs/markdown-remark", "npm:3.5.0"]\
+            ["@astrojs/markdown-remark", "npm:4.0.1"],\
+            ["@astrojs/prism", "npm:3.0.0"],\
+            ["github-slugger", "npm:2.0.0"],\
+            ["import-meta-resolve", "npm:4.0.0"],\
+            ["mdast-util-definitions", "npm:6.0.0"],\
+            ["rehype-raw", "npm:7.0.0"],\
+            ["rehype-stringify", "npm:10.0.0"],\
+            ["remark-gfm", "npm:4.0.0"],\
+            ["remark-parse", "npm:11.0.0"],\
+            ["remark-rehype", "npm:11.0.0"],\
+            ["remark-smartypants", "npm:2.0.0"],\
+            ["shikiji", "npm:0.6.13"],\
+            ["unified", "npm:11.0.4"],\
+            ["unist-util-visit", "npm:5.0.0"],\
+            ["vfile", "npm:6.0.1"]\
           ],\
-          "linkType": "SOFT"\
+          "linkType": "HARD"\
         }],\
         ["virtual:8d269bce0a00eabefa33e880c91c36f6e8a0a2990e832318bbf44575891f5df18c344cc75cb1693f71c7f1720851fd78b73ff95cc9300a92eb44a6c6e4a20105#npm:3.2.1", {\
           "packageLocation": "./.yarn/__virtual__/@astrojs-markdown-remark-virtual-35ff8593cd/0/cache/@astrojs-markdown-remark-npm-3.2.1-d9f385ad32-666552212c.zip/node_modules/@astrojs/markdown-remark/",\
@@ -237,64 +251,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "astro"\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["virtual:ade17415a98fccf762103e2378160446291485851f73892fbfc20c48c4ba93d7761f6a49b9a49e3eb82a9a103323f2640713352e2f05ba6abecb0e1fb8de821a#npm:3.5.0", {\
-          "packageLocation": "./.yarn/__virtual__/@astrojs-markdown-remark-virtual-4b4af7906c/0/cache/@astrojs-markdown-remark-npm-3.5.0-51ebbb3305-991e41551f.zip/node_modules/@astrojs/markdown-remark/",\
-          "packageDependencies": [\
-            ["@astrojs/markdown-remark", "virtual:ade17415a98fccf762103e2378160446291485851f73892fbfc20c48c4ba93d7761f6a49b9a49e3eb82a9a103323f2640713352e2f05ba6abecb0e1fb8de821a#npm:3.5.0"],\
-            ["@astrojs/prism", "npm:3.0.0"],\
-            ["@types/astro", null],\
-            ["astro", "npm:3.2.3"],\
-            ["github-slugger", "npm:2.0.0"],\
-            ["import-meta-resolve", "npm:3.1.1"],\
-            ["mdast-util-definitions", "npm:6.0.0"],\
-            ["rehype-raw", "npm:6.1.1"],\
-            ["rehype-stringify", "npm:9.0.4"],\
-            ["remark-gfm", "npm:3.0.1"],\
-            ["remark-parse", "npm:10.0.2"],\
-            ["remark-rehype", "npm:10.1.0"],\
-            ["remark-smartypants", "npm:2.0.0"],\
-            ["shikiji", "npm:0.6.13"],\
-            ["unified", "npm:10.1.2"],\
-            ["unist-util-visit", "npm:4.1.2"],\
-            ["vfile", "npm:5.3.7"]\
-          ],\
-          "packagePeers": [\
-            "@types/astro",\
-            "astro"\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["@astrojs/mdx", [\
-        ["npm:1.1.5", {\
-          "packageLocation": "./.yarn/cache/@astrojs-mdx-npm-1.1.5-3755fb476e-5b41f10bcc.zip/node_modules/@astrojs/mdx/",\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/@astrojs-mdx-npm-2.0.3-26d6e58f99-9842d0dec2.zip/node_modules/@astrojs/mdx/",\
           "packageDependencies": [\
-            ["@astrojs/mdx", "npm:1.1.5"]\
+            ["@astrojs/mdx", "npm:2.0.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5", {\
-          "packageLocation": "./.yarn/__virtual__/@astrojs-mdx-virtual-ade17415a9/0/cache/@astrojs-mdx-npm-1.1.5-3755fb476e-5b41f10bcc.zip/node_modules/@astrojs/mdx/",\
+        ["virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:2.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/@astrojs-mdx-virtual-00859aaddb/0/cache/@astrojs-mdx-npm-2.0.3-26d6e58f99-9842d0dec2.zip/node_modules/@astrojs/mdx/",\
           "packageDependencies": [\
-            ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
-            ["@astrojs/markdown-remark", "virtual:ade17415a98fccf762103e2378160446291485851f73892fbfc20c48c4ba93d7761f6a49b9a49e3eb82a9a103323f2640713352e2f05ba6abecb0e1fb8de821a#npm:3.5.0"],\
-            ["@mdx-js/mdx", "npm:2.3.0"],\
+            ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:2.0.3"],\
+            ["@astrojs/markdown-remark", "npm:4.0.1"],\
+            ["@mdx-js/mdx", "npm:3.0.0"],\
             ["@types/astro", null],\
-            ["acorn", "npm:8.11.2"],\
+            ["acorn", "npm:8.11.3"],\
             ["astro", "npm:3.2.3"],\
             ["es-module-lexer", "npm:1.4.1"],\
-            ["estree-util-visit", "npm:1.2.1"],\
+            ["estree-util-visit", "npm:2.0.0"],\
             ["github-slugger", "npm:2.0.0"],\
             ["gray-matter", "npm:4.0.3"],\
-            ["hast-util-to-html", "npm:8.0.4"],\
+            ["hast-util-to-html", "npm:9.0.0"],\
             ["kleur", "npm:4.1.5"],\
-            ["rehype-raw", "npm:6.1.1"],\
-            ["remark-gfm", "npm:3.0.1"],\
+            ["rehype-raw", "npm:7.0.0"],\
+            ["remark-gfm", "npm:4.0.0"],\
             ["remark-smartypants", "npm:2.0.0"],\
             ["source-map", "npm:0.7.4"],\
-            ["unist-util-visit", "npm:4.1.2"],\
-            ["vfile", "npm:5.3.7"]\
+            ["unist-util-visit", "npm:5.0.0"],\
+            ["vfile", "npm:6.0.1"]\
           ],\
           "packagePeers": [\
             "@types/astro",\
@@ -1290,27 +1277,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@mdx-js/mdx", [\
-        ["npm:2.3.0", {\
-          "packageLocation": "./.yarn/cache/@mdx-js-mdx-npm-2.3.0-043b30d13e-d918766a32.zip/node_modules/@mdx-js/mdx/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/@mdx-js-mdx-npm-3.0.0-60c1bb5452-da4305dcfd.zip/node_modules/@mdx-js/mdx/",\
           "packageDependencies": [\
-            ["@mdx-js/mdx", "npm:2.3.0"],\
+            ["@mdx-js/mdx", "npm:3.0.0"],\
+            ["@types/estree", "npm:1.0.5"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
+            ["@types/hast", "npm:3.0.3"],\
             ["@types/mdx", "npm:2.0.10"],\
-            ["estree-util-build-jsx", "npm:2.2.2"],\
-            ["estree-util-is-identifier-name", "npm:2.1.0"],\
-            ["estree-util-to-js", "npm:1.2.0"],\
+            ["collapse-white-space", "npm:2.1.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["estree-util-build-jsx", "npm:3.0.1"],\
+            ["estree-util-is-identifier-name", "npm:3.0.0"],\
+            ["estree-util-to-js", "npm:2.0.0"],\
             ["estree-walker", "npm:3.0.3"],\
-            ["hast-util-to-estree", "npm:2.3.3"],\
-            ["markdown-extensions", "npm:1.1.1"],\
+            ["hast-util-to-estree", "npm:3.1.0"],\
+            ["hast-util-to-jsx-runtime", "npm:2.3.0"],\
+            ["markdown-extensions", "npm:2.0.0"],\
             ["periscopic", "npm:3.1.0"],\
-            ["remark-mdx", "npm:2.3.0"],\
-            ["remark-parse", "npm:10.0.2"],\
-            ["remark-rehype", "npm:10.1.0"],\
-            ["unified", "npm:10.1.2"],\
-            ["unist-util-position-from-estree", "npm:1.1.2"],\
-            ["unist-util-stringify-position", "npm:3.0.3"],\
-            ["unist-util-visit", "npm:4.1.2"],\
-            ["vfile", "npm:5.3.7"]\
+            ["remark-mdx", "npm:3.0.0"],\
+            ["remark-parse", "npm:11.0.0"],\
+            ["remark-rehype", "npm:11.0.0"],\
+            ["source-map", "npm:0.7.4"],\
+            ["unified", "npm:11.0.4"],\
+            ["unist-util-position-from-estree", "npm:2.0.0"],\
+            ["unist-util-stringify-position", "npm:4.0.0"],\
+            ["unist-util-visit", "npm:5.0.0"],\
+            ["vfile", "npm:6.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2273,6 +2266,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn", "npm:8.11.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:8.11.3", {\
+          "packageLocation": "./.yarn/cache/acorn-npm-8.11.3-0d7ab48b38-76d8e7d559.zip/node_modules/acorn/",\
+          "packageDependencies": [\
+            ["acorn", "npm:8.11.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["acorn-jsx", [\
@@ -2635,7 +2635,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["astro-cactus", "workspace:."],\
             ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
-            ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
+            ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:2.0.3"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
             ["@astrojs/rss", "npm:3.0.0"],\
             ["@astrojs/sitemap", "npm:3.0.3"],\
@@ -3233,6 +3233,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/clsx-npm-2.0.0-afafbbe44a-a2cfb2351b.zip/node_modules/clsx/",\
           "packageDependencies": [\
             ["clsx", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["collapse-white-space", [\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/collapse-white-space-npm-2.1.0-89651f51f3-c8978b1f4e.zip/node_modules/collapse-white-space/",\
+          "packageDependencies": [\
+            ["collapse-white-space", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4535,41 +4544,42 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["estree-util-attach-comments", [\
-        ["npm:2.1.1", {\
-          "packageLocation": "./.yarn/cache/estree-util-attach-comments-npm-2.1.1-872c177a8a-c5c2c41c9a.zip/node_modules/estree-util-attach-comments/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/estree-util-attach-comments-npm-3.0.0-9a9d33e548-56254eaef3.zip/node_modules/estree-util-attach-comments/",\
           "packageDependencies": [\
-            ["estree-util-attach-comments", "npm:2.1.1"],\
+            ["estree-util-attach-comments", "npm:3.0.0"],\
             ["@types/estree", "npm:1.0.5"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["estree-util-build-jsx", [\
-        ["npm:2.2.2", {\
-          "packageLocation": "./.yarn/cache/estree-util-build-jsx-npm-2.2.2-c3f1420348-d008ac36a4.zip/node_modules/estree-util-build-jsx/",\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/estree-util-build-jsx-npm-3.0.1-e6ce7e25ac-185eff060e.zip/node_modules/estree-util-build-jsx/",\
           "packageDependencies": [\
-            ["estree-util-build-jsx", "npm:2.2.2"],\
+            ["estree-util-build-jsx", "npm:3.0.1"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
-            ["estree-util-is-identifier-name", "npm:2.1.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["estree-util-is-identifier-name", "npm:3.0.0"],\
             ["estree-walker", "npm:3.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["estree-util-is-identifier-name", [\
-        ["npm:2.1.0", {\
-          "packageLocation": "./.yarn/cache/estree-util-is-identifier-name-npm-2.1.0-2b8df71baf-cab317a071.zip/node_modules/estree-util-is-identifier-name/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/estree-util-is-identifier-name-npm-3.0.0-7815ea9f20-ea3909f018.zip/node_modules/estree-util-is-identifier-name/",\
           "packageDependencies": [\
-            ["estree-util-is-identifier-name", "npm:2.1.0"]\
+            ["estree-util-is-identifier-name", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["estree-util-to-js", [\
-        ["npm:1.2.0", {\
-          "packageLocation": "./.yarn/cache/estree-util-to-js-npm-1.2.0-85057be9d5-93a75e1051.zip/node_modules/estree-util-to-js/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/estree-util-to-js-npm-2.0.0-64970efd5d-833edc94ab.zip/node_modules/estree-util-to-js/",\
           "packageDependencies": [\
-            ["estree-util-to-js", "npm:1.2.0"],\
+            ["estree-util-to-js", "npm:2.0.0"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
             ["astring", "npm:1.8.6"],\
             ["source-map", "npm:0.7.4"]\
@@ -4578,12 +4588,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["estree-util-visit", [\
-        ["npm:1.2.1", {\
-          "packageLocation": "./.yarn/cache/estree-util-visit-npm-1.2.1-58d95f90a0-6feea4fdc4.zip/node_modules/estree-util-visit/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/estree-util-visit-npm-2.0.0-a1ee97d6ab-6444b38f22.zip/node_modules/estree-util-visit/",\
           "packageDependencies": [\
-            ["estree-util-visit", "npm:1.2.1"],\
+            ["estree-util-visit", "npm:2.0.0"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
-            ["@types/unist", "npm:2.0.10"]\
+            ["@types/unist", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5372,24 +5382,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["hast-util-to-estree", [\
-        ["npm:2.3.3", {\
-          "packageLocation": "./.yarn/cache/hast-util-to-estree-npm-2.3.3-a87d9b491a-a09de0214d.zip/node_modules/hast-util-to-estree/",\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/hast-util-to-estree-npm-3.1.0-0bbaae89ac-61272f7c18.zip/node_modules/hast-util-to-estree/",\
           "packageDependencies": [\
-            ["hast-util-to-estree", "npm:2.3.3"],\
+            ["hast-util-to-estree", "npm:3.1.0"],\
             ["@types/estree", "npm:1.0.5"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
-            ["@types/hast", "npm:2.3.8"],\
-            ["@types/unist", "npm:2.0.10"],\
+            ["@types/hast", "npm:3.0.3"],\
             ["comma-separated-tokens", "npm:2.0.3"],\
-            ["estree-util-attach-comments", "npm:2.1.1"],\
-            ["estree-util-is-identifier-name", "npm:2.1.0"],\
-            ["hast-util-whitespace", "npm:2.0.1"],\
-            ["mdast-util-mdx-expression", "npm:1.3.2"],\
-            ["mdast-util-mdxjs-esm", "npm:1.3.1"],\
+            ["devlop", "npm:1.1.0"],\
+            ["estree-util-attach-comments", "npm:3.0.0"],\
+            ["estree-util-is-identifier-name", "npm:3.0.0"],\
+            ["hast-util-whitespace", "npm:3.0.0"],\
+            ["mdast-util-mdx-expression", "npm:2.0.0"],\
+            ["mdast-util-mdx-jsx", "npm:3.0.0"],\
+            ["mdast-util-mdxjs-esm", "npm:2.0.1"],\
             ["property-information", "npm:6.4.0"],\
             ["space-separated-tokens", "npm:2.0.2"],\
             ["style-to-object", "npm:0.4.4"],\
-            ["unist-util-position", "npm:4.0.4"],\
+            ["unist-util-position", "npm:5.0.0"],\
             ["zwitch", "npm:2.0.4"]\
           ],\
           "linkType": "HARD"\
@@ -5430,6 +5441,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["space-separated-tokens", "npm:2.0.2"],\
             ["stringify-entities", "npm:4.0.3"],\
             ["zwitch", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["hast-util-to-jsx-runtime", [\
+        ["npm:2.3.0", {\
+          "packageLocation": "./.yarn/cache/hast-util-to-jsx-runtime-npm-2.3.0-c0e033a67f-599a97c6ec.zip/node_modules/hast-util-to-jsx-runtime/",\
+          "packageDependencies": [\
+            ["hast-util-to-jsx-runtime", "npm:2.3.0"],\
+            ["@types/estree", "npm:1.0.5"],\
+            ["@types/hast", "npm:3.0.3"],\
+            ["@types/unist", "npm:3.0.2"],\
+            ["comma-separated-tokens", "npm:2.0.3"],\
+            ["devlop", "npm:1.1.0"],\
+            ["estree-util-is-identifier-name", "npm:3.0.0"],\
+            ["hast-util-whitespace", "npm:3.0.0"],\
+            ["mdast-util-mdx-expression", "npm:2.0.0"],\
+            ["mdast-util-mdx-jsx", "npm:3.0.0"],\
+            ["mdast-util-mdxjs-esm", "npm:2.0.1"],\
+            ["property-information", "npm:6.4.0"],\
+            ["space-separated-tokens", "npm:2.0.2"],\
+            ["style-to-object", "npm:1.0.5"],\
+            ["unist-util-position", "npm:5.0.0"],\
+            ["vfile-message", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5661,6 +5696,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["import-meta-resolve", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/import-meta-resolve-npm-4.0.0-13a6ef4fd3-51c50115fd.zip/node_modules/import-meta-resolve/",\
+          "packageDependencies": [\
+            ["import-meta-resolve", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["imurmurhash", [\
@@ -5715,6 +5757,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/inline-style-parser-npm-0.1.1-702eac409f-5d545056a3.zip/node_modules/inline-style-parser/",\
           "packageDependencies": [\
             ["inline-style-parser", "npm:0.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.2.2", {\
+          "packageLocation": "./.yarn/cache/inline-style-parser-npm-0.2.2-9356bfe5ef-698893d654.zip/node_modules/inline-style-parser/",\
+          "packageDependencies": [\
+            ["inline-style-parser", "npm:0.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6588,10 +6637,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["markdown-extensions", [\
-        ["npm:1.1.1", {\
-          "packageLocation": "./.yarn/cache/markdown-extensions-npm-1.1.1-633329e3d0-8a6dd128be.zip/node_modules/markdown-extensions/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/markdown-extensions-npm-2.0.0-ab861fd299-ec4ffcb076.zip/node_modules/markdown-extensions/",\
           "packageDependencies": [\
-            ["markdown-extensions", "npm:1.1.1"]\
+            ["markdown-extensions", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6638,6 +6687,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unist-util-visit-parents", "npm:5.1.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/mdast-util-find-and-replace-npm-3.0.1-284ae6ddf8-05d5c4ff02.zip/node_modules/mdast-util-find-and-replace/",\
+          "packageDependencies": [\
+            ["mdast-util-find-and-replace", "npm:3.0.1"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["escape-string-regexp", "npm:5.0.0"],\
+            ["unist-util-is", "npm:6.0.0"],\
+            ["unist-util-visit-parents", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-from-markdown", [\
@@ -6659,6 +6719,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-from-markdown-npm-2.0.0-7358a7473f-4e8d8a46b4.zip/node_modules/mdast-util-from-markdown/",\
+          "packageDependencies": [\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["@types/unist", "npm:3.0.2"],\
+            ["decode-named-character-reference", "npm:1.0.2"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-to-string", "npm:4.0.0"],\
+            ["micromark", "npm:4.0.0"],\
+            ["micromark-util-decode-numeric-character-reference", "npm:2.0.1"],\
+            ["micromark-util-decode-string", "npm:2.0.0"],\
+            ["micromark-util-normalize-identifier", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"],\
+            ["unist-util-stringify-position", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-gfm", [\
@@ -6675,6 +6754,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-to-markdown", "npm:1.5.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-gfm-npm-3.0.0-c4b06d0013-62039d2f68.zip/node_modules/mdast-util-gfm/",\
+          "packageDependencies": [\
+            ["mdast-util-gfm", "npm:3.0.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-gfm-autolink-literal", "npm:2.0.0"],\
+            ["mdast-util-gfm-footnote", "npm:2.0.0"],\
+            ["mdast-util-gfm-strikethrough", "npm:2.0.0"],\
+            ["mdast-util-gfm-table", "npm:2.0.0"],\
+            ["mdast-util-gfm-task-list-item", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-gfm-autolink-literal", [\
@@ -6686,6 +6779,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ccount", "npm:2.0.1"],\
             ["mdast-util-find-and-replace", "npm:2.2.2"],\
             ["micromark-util-character", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-gfm-autolink-literal-npm-2.0.0-620ccef115-10322662e5.zip/node_modules/mdast-util-gfm-autolink-literal/",\
+          "packageDependencies": [\
+            ["mdast-util-gfm-autolink-literal", "npm:2.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["ccount", "npm:2.0.1"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-find-and-replace", "npm:3.0.1"],\
+            ["micromark-util-character", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6700,6 +6805,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-normalize-identifier", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-gfm-footnote-npm-2.0.0-4a167ca606-45d26b40e7.zip/node_modules/mdast-util-gfm-footnote/",\
+          "packageDependencies": [\
+            ["mdast-util-gfm-footnote", "npm:2.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"],\
+            ["micromark-util-normalize-identifier", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-gfm-strikethrough", [\
@@ -6709,6 +6826,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-gfm-strikethrough", "npm:1.0.3"],\
             ["@types/mdast", "npm:3.0.15"],\
             ["mdast-util-to-markdown", "npm:1.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-gfm-strikethrough-npm-2.0.0-d16d95c318-fe9b1d0eba.zip/node_modules/mdast-util-gfm-strikethrough/",\
+          "packageDependencies": [\
+            ["mdast-util-gfm-strikethrough", "npm:2.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6724,6 +6851,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-to-markdown", "npm:1.5.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-gfm-table-npm-2.0.0-45a74f064b-063a627fd0.zip/node_modules/mdast-util-gfm-table/",\
+          "packageDependencies": [\
+            ["mdast-util-gfm-table", "npm:2.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["devlop", "npm:1.1.0"],\
+            ["markdown-table", "npm:3.0.3"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-gfm-task-list-item", [\
@@ -6735,67 +6874,81 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-to-markdown", "npm:1.5.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-gfm-task-list-item-npm-2.0.0-cb1270a10f-37db90c59b.zip/node_modules/mdast-util-gfm-task-list-item/",\
+          "packageDependencies": [\
+            ["mdast-util-gfm-task-list-item", "npm:2.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-mdx", [\
-        ["npm:2.0.1", {\
-          "packageLocation": "./.yarn/cache/mdast-util-mdx-npm-2.0.1-fa9e345324-7303149230.zip/node_modules/mdast-util-mdx/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-mdx-npm-3.0.0-02a6734e33-e2b007d826.zip/node_modules/mdast-util-mdx/",\
           "packageDependencies": [\
-            ["mdast-util-mdx", "npm:2.0.1"],\
-            ["mdast-util-from-markdown", "npm:1.3.1"],\
-            ["mdast-util-mdx-expression", "npm:1.3.2"],\
-            ["mdast-util-mdx-jsx", "npm:2.1.4"],\
-            ["mdast-util-mdxjs-esm", "npm:1.3.1"],\
-            ["mdast-util-to-markdown", "npm:1.5.0"]\
+            ["mdast-util-mdx", "npm:3.0.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-mdx-expression", "npm:2.0.0"],\
+            ["mdast-util-mdx-jsx", "npm:3.0.0"],\
+            ["mdast-util-mdxjs-esm", "npm:2.0.1"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-mdx-expression", [\
-        ["npm:1.3.2", {\
-          "packageLocation": "./.yarn/cache/mdast-util-mdx-expression-npm-1.3.2-0cd3362efc-e4c90f26de.zip/node_modules/mdast-util-mdx-expression/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-mdx-expression-npm-2.0.0-442ccac045-4e1183000e.zip/node_modules/mdast-util-mdx-expression/",\
           "packageDependencies": [\
-            ["mdast-util-mdx-expression", "npm:1.3.2"],\
+            ["mdast-util-mdx-expression", "npm:2.0.0"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
-            ["@types/hast", "npm:2.3.8"],\
-            ["@types/mdast", "npm:3.0.15"],\
-            ["mdast-util-from-markdown", "npm:1.3.1"],\
-            ["mdast-util-to-markdown", "npm:1.5.0"]\
+            ["@types/hast", "npm:3.0.3"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-mdx-jsx", [\
-        ["npm:2.1.4", {\
-          "packageLocation": "./.yarn/cache/mdast-util-mdx-jsx-npm-2.1.4-7b04372865-add3ff2dd1.zip/node_modules/mdast-util-mdx-jsx/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-mdx-jsx-npm-3.0.0-c533f6aa5b-48fe1ba617.zip/node_modules/mdast-util-mdx-jsx/",\
           "packageDependencies": [\
-            ["mdast-util-mdx-jsx", "npm:2.1.4"],\
+            ["mdast-util-mdx-jsx", "npm:3.0.0"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
-            ["@types/hast", "npm:2.3.8"],\
-            ["@types/mdast", "npm:3.0.15"],\
-            ["@types/unist", "npm:2.0.10"],\
+            ["@types/hast", "npm:3.0.3"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["@types/unist", "npm:3.0.2"],\
             ["ccount", "npm:2.0.1"],\
-            ["mdast-util-from-markdown", "npm:1.3.1"],\
-            ["mdast-util-to-markdown", "npm:1.5.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"],\
             ["parse-entities", "npm:4.0.1"],\
             ["stringify-entities", "npm:4.0.3"],\
-            ["unist-util-remove-position", "npm:4.0.2"],\
-            ["unist-util-stringify-position", "npm:3.0.3"],\
-            ["vfile-message", "npm:3.1.4"]\
+            ["unist-util-remove-position", "npm:5.0.0"],\
+            ["unist-util-stringify-position", "npm:4.0.0"],\
+            ["vfile-message", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["mdast-util-mdxjs-esm", [\
-        ["npm:1.3.1", {\
-          "packageLocation": "./.yarn/cache/mdast-util-mdxjs-esm-npm-1.3.1-ae04f9d0af-ee78a4f58a.zip/node_modules/mdast-util-mdxjs-esm/",\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/mdast-util-mdxjs-esm-npm-2.0.1-4431068664-1f9dad04d3.zip/node_modules/mdast-util-mdxjs-esm/",\
           "packageDependencies": [\
-            ["mdast-util-mdxjs-esm", "npm:1.3.1"],\
+            ["mdast-util-mdxjs-esm", "npm:2.0.1"],\
             ["@types/estree-jsx", "npm:1.0.3"],\
-            ["@types/hast", "npm:2.3.8"],\
-            ["@types/mdast", "npm:3.0.15"],\
-            ["mdast-util-from-markdown", "npm:1.3.1"],\
-            ["mdast-util-to-markdown", "npm:1.5.0"]\
+            ["@types/hast", "npm:3.0.3"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["devlop", "npm:1.1.0"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6807,6 +6960,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-phrasing", "npm:3.0.1"],\
             ["@types/mdast", "npm:3.0.15"],\
             ["unist-util-is", "npm:5.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-phrasing-npm-4.0.0-0b0e9b0edd-95d5d8e18d.zip/node_modules/mdast-util-phrasing/",\
+          "packageDependencies": [\
+            ["mdast-util-phrasing", "npm:4.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["unist-util-is", "npm:6.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6855,6 +7017,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-to-string", "npm:3.2.0"],\
             ["micromark-util-decode-string", "npm:1.1.0"],\
             ["unist-util-visit", "npm:4.1.2"],\
+            ["zwitch", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/mdast-util-to-markdown-npm-2.1.0-450939723c-3a2cf3957e.zip/node_modules/mdast-util-to-markdown/",\
+          "packageDependencies": [\
+            ["mdast-util-to-markdown", "npm:2.1.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["@types/unist", "npm:3.0.2"],\
+            ["longest-streak", "npm:3.1.0"],\
+            ["mdast-util-phrasing", "npm:4.0.0"],\
+            ["mdast-util-to-string", "npm:4.0.0"],\
+            ["micromark-util-decode-string", "npm:2.0.0"],\
+            ["unist-util-visit", "npm:5.0.0"],\
             ["zwitch", "npm:2.0.4"]\
           ],\
           "linkType": "HARD"\
@@ -6929,6 +7106,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-npm-4.0.0-ddf83a29ef-b84ab5ab1a.zip/node_modules/micromark/",\
+          "packageDependencies": [\
+            ["micromark", "npm:4.0.0"],\
+            ["@types/debug", "npm:4.1.12"],\
+            ["debug", "virtual:fac5ca3376ee59365d07e8a1b07e947814efe6fb13c93a96ec0d9ba88716e2260780e2e076b3a60116c110c8332de0550df03424ae943028a713243a526e323d#npm:4.3.4"],\
+            ["decode-named-character-reference", "npm:1.0.2"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-core-commonmark", "npm:2.0.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-chunked", "npm:2.0.0"],\
+            ["micromark-util-combine-extensions", "npm:2.0.0"],\
+            ["micromark-util-decode-numeric-character-reference", "npm:2.0.1"],\
+            ["micromark-util-encode", "npm:2.0.0"],\
+            ["micromark-util-normalize-identifier", "npm:2.0.0"],\
+            ["micromark-util-resolve-all", "npm:2.0.0"],\
+            ["micromark-util-sanitize-uri", "npm:2.0.0"],\
+            ["micromark-util-subtokenize", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-core-commonmark", [\
@@ -6954,6 +7155,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-core-commonmark-npm-2.0.0-7c6eee3e3e-9c12fb580c.zip/node_modules/micromark-core-commonmark/",\
+          "packageDependencies": [\
+            ["micromark-core-commonmark", "npm:2.0.0"],\
+            ["decode-named-character-reference", "npm:1.0.2"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-factory-destination", "npm:2.0.0"],\
+            ["micromark-factory-label", "npm:2.0.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-factory-title", "npm:2.0.0"],\
+            ["micromark-factory-whitespace", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-chunked", "npm:2.0.0"],\
+            ["micromark-util-classify-character", "npm:2.0.0"],\
+            ["micromark-util-html-tag-name", "npm:2.0.0"],\
+            ["micromark-util-normalize-identifier", "npm:2.0.0"],\
+            ["micromark-util-resolve-all", "npm:2.0.0"],\
+            ["micromark-util-subtokenize", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-gfm", [\
@@ -6971,6 +7195,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-types", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-npm-3.0.0-d154ab531f-2060fa6266.zip/node_modules/micromark-extension-gfm/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm", "npm:3.0.0"],\
+            ["micromark-extension-gfm-autolink-literal", "npm:2.0.0"],\
+            ["micromark-extension-gfm-footnote", "npm:2.0.0"],\
+            ["micromark-extension-gfm-strikethrough", "npm:2.0.0"],\
+            ["micromark-extension-gfm-table", "npm:2.0.0"],\
+            ["micromark-extension-gfm-tagfilter", "npm:2.0.0"],\
+            ["micromark-extension-gfm-task-list-item", "npm:2.0.1"],\
+            ["micromark-util-combine-extensions", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-gfm-autolink-literal", [\
@@ -6982,6 +7221,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-sanitize-uri", "npm:1.2.0"],\
             ["micromark-util-symbol", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-autolink-literal-npm-2.0.0-b724d31829-fa16d59528.zip/node_modules/micromark-extension-gfm-autolink-literal/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm-autolink-literal", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-sanitize-uri", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7001,6 +7251,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-footnote-npm-2.0.0-22161d24c5-a426fddecf.zip/node_modules/micromark-extension-gfm-footnote/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm-footnote", "npm:2.0.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-core-commonmark", "npm:2.0.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-normalize-identifier", "npm:2.0.0"],\
+            ["micromark-util-sanitize-uri", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-gfm-strikethrough", [\
@@ -7014,6 +7279,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-symbol", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"],\
             ["uvu", "npm:0.5.6"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-strikethrough-npm-2.0.0-32b23d068e-4e35fbbf36.zip/node_modules/micromark-extension-gfm-strikethrough/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm-strikethrough", "npm:2.0.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-util-chunked", "npm:2.0.0"],\
+            ["micromark-util-classify-character", "npm:2.0.0"],\
+            ["micromark-util-resolve-all", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7030,6 +7308,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-table-npm-2.0.0-91b6cc0ef5-71484dcf8d.zip/node_modules/micromark-extension-gfm-table/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm-table", "npm:2.0.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-gfm-tagfilter", [\
@@ -7038,6 +7328,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["micromark-extension-gfm-tagfilter", "npm:1.0.2"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-tagfilter-npm-2.0.0-c5ad486636-cf21552f4a.zip/node_modules/micromark-extension-gfm-tagfilter/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm-tagfilter", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7054,85 +7352,97 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-gfm-task-list-item-npm-2.0.1-7e34125fdb-80e569ab1a.zip/node_modules/micromark-extension-gfm-task-list-item/",\
+          "packageDependencies": [\
+            ["micromark-extension-gfm-task-list-item", "npm:2.0.1"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-mdx-expression", [\
-        ["npm:1.0.8", {\
-          "packageLocation": "./.yarn/cache/micromark-extension-mdx-expression-npm-1.0.8-95d2ed6eb2-49750d10c1.zip/node_modules/micromark-extension-mdx-expression/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-mdx-expression-npm-3.0.0-4efecb7218-abd6ba0acd.zip/node_modules/micromark-extension-mdx-expression/",\
           "packageDependencies": [\
-            ["micromark-extension-mdx-expression", "npm:1.0.8"],\
+            ["micromark-extension-mdx-expression", "npm:3.0.0"],\
             ["@types/estree", "npm:1.0.5"],\
-            ["micromark-factory-mdx-expression", "npm:1.0.9"],\
-            ["micromark-factory-space", "npm:1.1.0"],\
-            ["micromark-util-character", "npm:1.2.0"],\
-            ["micromark-util-events-to-acorn", "npm:1.2.3"],\
-            ["micromark-util-symbol", "npm:1.1.0"],\
-            ["micromark-util-types", "npm:1.1.0"],\
-            ["uvu", "npm:0.5.6"]\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-factory-mdx-expression", "npm:2.0.1"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-events-to-acorn", "npm:2.0.2"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-mdx-jsx", [\
-        ["npm:1.0.5", {\
-          "packageLocation": "./.yarn/cache/micromark-extension-mdx-jsx-npm-1.0.5-ef5b951682-0ddb7b71c2.zip/node_modules/micromark-extension-mdx-jsx/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-mdx-jsx-npm-3.0.0-9128341ebb-5e2f45d381.zip/node_modules/micromark-extension-mdx-jsx/",\
           "packageDependencies": [\
-            ["micromark-extension-mdx-jsx", "npm:1.0.5"],\
+            ["micromark-extension-mdx-jsx", "npm:3.0.0"],\
             ["@types/acorn", "npm:4.0.6"],\
             ["@types/estree", "npm:1.0.5"],\
-            ["estree-util-is-identifier-name", "npm:2.1.0"],\
-            ["micromark-factory-mdx-expression", "npm:1.0.9"],\
-            ["micromark-factory-space", "npm:1.1.0"],\
-            ["micromark-util-character", "npm:1.2.0"],\
-            ["micromark-util-symbol", "npm:1.1.0"],\
-            ["micromark-util-types", "npm:1.1.0"],\
-            ["uvu", "npm:0.5.6"],\
-            ["vfile-message", "npm:3.1.4"]\
+            ["devlop", "npm:1.1.0"],\
+            ["estree-util-is-identifier-name", "npm:3.0.0"],\
+            ["micromark-factory-mdx-expression", "npm:2.0.1"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"],\
+            ["vfile-message", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-mdx-md", [\
-        ["npm:1.0.1", {\
-          "packageLocation": "./.yarn/cache/micromark-extension-mdx-md-npm-1.0.1-c524399fe3-fdeaf8f4f9.zip/node_modules/micromark-extension-mdx-md/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-mdx-md-npm-2.0.0-eba668824c-7daf03372f.zip/node_modules/micromark-extension-mdx-md/",\
           "packageDependencies": [\
-            ["micromark-extension-mdx-md", "npm:1.0.1"],\
-            ["micromark-util-types", "npm:1.1.0"]\
+            ["micromark-extension-mdx-md", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-mdxjs", [\
-        ["npm:1.0.1", {\
-          "packageLocation": "./.yarn/cache/micromark-extension-mdxjs-npm-1.0.1-ceca8ad557-1e6bf3df76.zip/node_modules/micromark-extension-mdxjs/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-mdxjs-npm-3.0.0-c1ee8da220-7da6f0fb0e.zip/node_modules/micromark-extension-mdxjs/",\
           "packageDependencies": [\
-            ["micromark-extension-mdxjs", "npm:1.0.1"],\
+            ["micromark-extension-mdxjs", "npm:3.0.0"],\
             ["acorn", "npm:8.11.2"],\
             ["acorn-jsx", "virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2"],\
-            ["micromark-extension-mdx-expression", "npm:1.0.8"],\
-            ["micromark-extension-mdx-jsx", "npm:1.0.5"],\
-            ["micromark-extension-mdx-md", "npm:1.0.1"],\
-            ["micromark-extension-mdxjs-esm", "npm:1.0.5"],\
-            ["micromark-util-combine-extensions", "npm:1.1.0"],\
-            ["micromark-util-types", "npm:1.1.0"]\
+            ["micromark-extension-mdx-expression", "npm:3.0.0"],\
+            ["micromark-extension-mdx-jsx", "npm:3.0.0"],\
+            ["micromark-extension-mdx-md", "npm:2.0.0"],\
+            ["micromark-extension-mdxjs-esm", "npm:3.0.0"],\
+            ["micromark-util-combine-extensions", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-extension-mdxjs-esm", [\
-        ["npm:1.0.5", {\
-          "packageLocation": "./.yarn/cache/micromark-extension-mdxjs-esm-npm-1.0.5-cb307e2a05-7006cfa963.zip/node_modules/micromark-extension-mdxjs-esm/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-extension-mdxjs-esm-npm-3.0.0-f09fb4b82d-fb33d85020.zip/node_modules/micromark-extension-mdxjs-esm/",\
           "packageDependencies": [\
-            ["micromark-extension-mdxjs-esm", "npm:1.0.5"],\
+            ["micromark-extension-mdxjs-esm", "npm:3.0.0"],\
             ["@types/estree", "npm:1.0.5"],\
-            ["micromark-core-commonmark", "npm:1.1.0"],\
-            ["micromark-util-character", "npm:1.2.0"],\
-            ["micromark-util-events-to-acorn", "npm:1.2.3"],\
-            ["micromark-util-symbol", "npm:1.1.0"],\
-            ["micromark-util-types", "npm:1.1.0"],\
-            ["unist-util-position-from-estree", "npm:1.1.2"],\
-            ["uvu", "npm:0.5.6"],\
-            ["vfile-message", "npm:3.1.4"]\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-core-commonmark", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-events-to-acorn", "npm:2.0.2"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"],\
+            ["unist-util-position-from-estree", "npm:2.0.0"],\
+            ["vfile-message", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7145,6 +7455,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-character", "npm:1.2.0"],\
             ["micromark-util-symbol", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-factory-destination-npm-2.0.0-1b8de67781-d36e65ed1c.zip/node_modules/micromark-factory-destination/",\
+          "packageDependencies": [\
+            ["micromark-factory-destination", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7160,21 +7480,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uvu", "npm:0.5.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-factory-label-npm-2.0.0-9e92e5cd87-c021dbd0ed.zip/node_modules/micromark-factory-label/",\
+          "packageDependencies": [\
+            ["micromark-factory-label", "npm:2.0.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-factory-mdx-expression", [\
-        ["npm:1.0.9", {\
-          "packageLocation": "./.yarn/cache/micromark-factory-mdx-expression-npm-1.0.9-5e83bb23b6-7359bf3290.zip/node_modules/micromark-factory-mdx-expression/",\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/micromark-factory-mdx-expression-npm-2.0.1-98802cfda0-2ba0ae939d.zip/node_modules/micromark-factory-mdx-expression/",\
           "packageDependencies": [\
-            ["micromark-factory-mdx-expression", "npm:1.0.9"],\
+            ["micromark-factory-mdx-expression", "npm:2.0.1"],\
             ["@types/estree", "npm:1.0.5"],\
-            ["micromark-util-character", "npm:1.2.0"],\
-            ["micromark-util-events-to-acorn", "npm:1.2.3"],\
-            ["micromark-util-symbol", "npm:1.1.0"],\
-            ["micromark-util-types", "npm:1.1.0"],\
-            ["unist-util-position-from-estree", "npm:1.1.2"],\
-            ["uvu", "npm:0.5.6"],\
-            ["vfile-message", "npm:3.1.4"]\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-events-to-acorn", "npm:2.0.2"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"],\
+            ["unist-util-position-from-estree", "npm:2.0.0"],\
+            ["vfile-message", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7186,6 +7517,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-factory-space", "npm:1.1.0"],\
             ["micromark-util-character", "npm:1.2.0"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-factory-space-npm-2.0.0-715185b38a-4ffdcdc2f7.zip/node_modules/micromark-factory-space/",\
+          "packageDependencies": [\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7201,6 +7541,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-types", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-factory-title-npm-2.0.0-9107a1e877-39e1ac23af.zip/node_modules/micromark-factory-title/",\
+          "packageDependencies": [\
+            ["micromark-factory-title", "npm:2.0.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-factory-whitespace", [\
@@ -7212,6 +7563,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-character", "npm:1.2.0"],\
             ["micromark-util-symbol", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-factory-whitespace-npm-2.0.0-53940ab034-9587c2546d.zip/node_modules/micromark-factory-whitespace/",\
+          "packageDependencies": [\
+            ["micromark-factory-whitespace", "npm:2.0.0"],\
+            ["micromark-factory-space", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7244,6 +7606,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-symbol", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-chunked-npm-2.0.0-97063efe7b-324f95cccd.zip/node_modules/micromark-util-chunked/",\
+          "packageDependencies": [\
+            ["micromark-util-chunked", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-util-classify-character", [\
@@ -7254,6 +7624,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-character", "npm:1.2.0"],\
             ["micromark-util-symbol", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-classify-character-npm-2.0.0-a260c97f86-086e52904d.zip/node_modules/micromark-util-classify-character/",\
+          "packageDependencies": [\
+            ["micromark-util-classify-character", "npm:2.0.0"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7267,6 +7647,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-types", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-combine-extensions-npm-2.0.0-6af1824ca7-107c477003.zip/node_modules/micromark-util-combine-extensions/",\
+          "packageDependencies": [\
+            ["micromark-util-combine-extensions", "npm:2.0.0"],\
+            ["micromark-util-chunked", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-util-decode-numeric-character-reference", [\
@@ -7275,6 +7664,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["micromark-util-decode-numeric-character-reference", "npm:1.1.0"],\
             ["micromark-util-symbol", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/micromark-util-decode-numeric-character-reference-npm-2.0.1-2db25e156f-9512507722.zip/node_modules/micromark-util-decode-numeric-character-reference/",\
+          "packageDependencies": [\
+            ["micromark-util-decode-numeric-character-reference", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7288,6 +7685,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-character", "npm:1.2.0"],\
             ["micromark-util-decode-numeric-character-reference", "npm:1.1.0"],\
             ["micromark-util-symbol", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-decode-string-npm-2.0.0-111ff2ba19-a75daf32a4.zip/node_modules/micromark-util-decode-string/",\
+          "packageDependencies": [\
+            ["micromark-util-decode-string", "npm:2.0.0"],\
+            ["decode-named-character-reference", "npm:1.0.2"],\
+            ["micromark-util-character", "npm:2.0.1"],\
+            ["micromark-util-decode-numeric-character-reference", "npm:2.0.1"],\
+            ["micromark-util-symbol", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7309,18 +7717,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["micromark-util-events-to-acorn", [\
-        ["npm:1.2.3", {\
-          "packageLocation": "./.yarn/cache/micromark-util-events-to-acorn-npm-1.2.3-e5c8bad960-aba0dadb86.zip/node_modules/micromark-util-events-to-acorn/",\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/micromark-util-events-to-acorn-npm-2.0.2-57370cc568-bcb3eeac52.zip/node_modules/micromark-util-events-to-acorn/",\
           "packageDependencies": [\
-            ["micromark-util-events-to-acorn", "npm:1.2.3"],\
+            ["micromark-util-events-to-acorn", "npm:2.0.2"],\
             ["@types/acorn", "npm:4.0.6"],\
             ["@types/estree", "npm:1.0.5"],\
-            ["@types/unist", "npm:2.0.10"],\
-            ["estree-util-visit", "npm:1.2.1"],\
-            ["micromark-util-symbol", "npm:1.1.0"],\
-            ["micromark-util-types", "npm:1.1.0"],\
-            ["uvu", "npm:0.5.6"],\
-            ["vfile-message", "npm:3.1.4"]\
+            ["@types/unist", "npm:3.0.2"],\
+            ["devlop", "npm:1.1.0"],\
+            ["estree-util-visit", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"],\
+            ["vfile-message", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7330,6 +7738,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/micromark-util-html-tag-name-npm-1.2.0-d8309ab06f-ccf0fa99b5.zip/node_modules/micromark-util-html-tag-name/",\
           "packageDependencies": [\
             ["micromark-util-html-tag-name", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-html-tag-name-npm-2.0.0-b09431e16f-d786d4486f.zip/node_modules/micromark-util-html-tag-name/",\
+          "packageDependencies": [\
+            ["micromark-util-html-tag-name", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7342,6 +7757,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-symbol", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-normalize-identifier-npm-2.0.0-1bfb89b3be-b36da2d3fd.zip/node_modules/micromark-util-normalize-identifier/",\
+          "packageDependencies": [\
+            ["micromark-util-normalize-identifier", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["micromark-util-resolve-all", [\
@@ -7350,6 +7773,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["micromark-util-resolve-all", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-resolve-all-npm-2.0.0-113e659bd2-31fe703b85.zip/node_modules/micromark-util-resolve-all/",\
+          "packageDependencies": [\
+            ["micromark-util-resolve-all", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7385,6 +7816,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark-util-symbol", "npm:1.1.0"],\
             ["micromark-util-types", "npm:1.1.0"],\
             ["uvu", "npm:0.5.6"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/micromark-util-subtokenize-npm-2.0.0-f6f7cb6cad-77d9c7d59c.zip/node_modules/micromark-util-subtokenize/",\
+          "packageDependencies": [\
+            ["micromark-util-subtokenize", "npm:2.0.0"],\
+            ["devlop", "npm:1.1.0"],\
+            ["micromark-util-chunked", "npm:2.0.0"],\
+            ["micromark-util-symbol", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8862,9 +9304,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unified", "npm:10.1.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.0.0", {\
+          "packageLocation": "./.yarn/cache/rehype-raw-npm-7.0.0-f3b08f8b7a-f9e28dcbf4.zip/node_modules/rehype-raw/",\
+          "packageDependencies": [\
+            ["rehype-raw", "npm:7.0.0"],\
+            ["@types/hast", "npm:3.0.3"],\
+            ["hast-util-raw", "npm:9.0.1"],\
+            ["vfile", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["rehype-stringify", [\
+        ["npm:10.0.0", {\
+          "packageLocation": "./.yarn/cache/rehype-stringify-npm-10.0.0-caaa3e672e-892cc9c01a.zip/node_modules/rehype-stringify/",\
+          "packageDependencies": [\
+            ["rehype-stringify", "npm:10.0.0"],\
+            ["@types/hast", "npm:3.0.3"],\
+            ["hast-util-to-html", "npm:9.0.0"],\
+            ["unified", "npm:11.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:9.0.4", {\
           "packageLocation": "./.yarn/cache/rehype-stringify-npm-9.0.4-cb3566e038-7da6f07a8b.zip/node_modules/rehype-stringify/",\
           "packageDependencies": [\
@@ -8887,15 +9349,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unified", "npm:10.1.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/remark-gfm-npm-4.0.0-8bb699e315-84bea84e38.zip/node_modules/remark-gfm/",\
+          "packageDependencies": [\
+            ["remark-gfm", "npm:4.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["mdast-util-gfm", "npm:3.0.0"],\
+            ["micromark-extension-gfm", "npm:3.0.0"],\
+            ["remark-parse", "npm:11.0.0"],\
+            ["remark-stringify", "npm:11.0.0"],\
+            ["unified", "npm:11.0.4"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["remark-mdx", [\
-        ["npm:2.3.0", {\
-          "packageLocation": "./.yarn/cache/remark-mdx-npm-2.3.0-9c964d4d99-98486986c5.zip/node_modules/remark-mdx/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/remark-mdx-npm-3.0.0-e9b3776661-8b9b3e5297.zip/node_modules/remark-mdx/",\
           "packageDependencies": [\
-            ["remark-mdx", "npm:2.3.0"],\
-            ["mdast-util-mdx", "npm:2.0.1"],\
-            ["micromark-extension-mdxjs", "npm:1.0.1"]\
+            ["remark-mdx", "npm:3.0.0"],\
+            ["mdast-util-mdx", "npm:3.0.0"],\
+            ["micromark-extension-mdxjs", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8908,6 +9383,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mdast", "npm:3.0.15"],\
             ["mdast-util-from-markdown", "npm:1.3.1"],\
             ["unified", "npm:10.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/cache/remark-parse-npm-11.0.0-6484fba69e-d83d245290.zip/node_modules/remark-parse/",\
+          "packageDependencies": [\
+            ["remark-parse", "npm:11.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["mdast-util-from-markdown", "npm:2.0.0"],\
+            ["micromark-util-types", "npm:2.0.0"],\
+            ["unified", "npm:11.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8923,6 +9409,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unified", "npm:10.1.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/cache/remark-rehype-npm-11.0.0-3af1483c7b-0ff0fd9487.zip/node_modules/remark-rehype/",\
+          "packageDependencies": [\
+            ["remark-rehype", "npm:11.0.0"],\
+            ["@types/hast", "npm:3.0.3"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["mdast-util-to-hast", "npm:13.0.2"],\
+            ["unified", "npm:11.0.4"],\
+            ["vfile", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["remark-smartypants", [\
@@ -8933,6 +9431,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["retext", "npm:8.1.0"],\
             ["retext-smartypants", "npm:5.2.0"],\
             ["unist-util-visit", "npm:4.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["remark-stringify", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/cache/remark-stringify-npm-11.0.0-b41a557b8d-59e07460eb.zip/node_modules/remark-stringify/",\
+          "packageDependencies": [\
+            ["remark-stringify", "npm:11.0.0"],\
+            ["@types/mdast", "npm:4.0.3"],\
+            ["mdast-util-to-markdown", "npm:2.1.0"],\
+            ["unified", "npm:11.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9771,6 +10281,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["inline-style-parser", "npm:0.1.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.0.5", {\
+          "packageLocation": "./.yarn/cache/style-to-object-npm-1.0.5-d99f315b8e-6201063204.zip/node_modules/style-to-object/",\
+          "packageDependencies": [\
+            ["style-to-object", "npm:1.0.5"],\
+            ["inline-style-parser", "npm:0.2.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["sucrase", [\
@@ -10316,6 +10834,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vfile", "npm:5.3.7"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:11.0.4", {\
+          "packageLocation": "./.yarn/cache/unified-npm-11.0.4-8cd6f1dc4d-cfb0239134.zip/node_modules/unified/",\
+          "packageDependencies": [\
+            ["unified", "npm:11.0.4"],\
+            ["@types/unist", "npm:3.0.2"],\
+            ["bail", "npm:2.0.2"],\
+            ["devlop", "npm:1.1.0"],\
+            ["extend", "npm:3.0.2"],\
+            ["is-plain-obj", "npm:4.1.0"],\
+            ["trough", "npm:2.1.0"],\
+            ["vfile", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["unique-filename", [\
@@ -10395,22 +10927,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["unist-util-position-from-estree", [\
-        ["npm:1.1.2", {\
-          "packageLocation": "./.yarn/cache/unist-util-position-from-estree-npm-1.1.2-2c54b9b445-e3f4060e2a.zip/node_modules/unist-util-position-from-estree/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/unist-util-position-from-estree-npm-2.0.0-adf063eee5-d3b3048a57.zip/node_modules/unist-util-position-from-estree/",\
           "packageDependencies": [\
-            ["unist-util-position-from-estree", "npm:1.1.2"],\
-            ["@types/unist", "npm:2.0.10"]\
+            ["unist-util-position-from-estree", "npm:2.0.0"],\
+            ["@types/unist", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["unist-util-remove-position", [\
-        ["npm:4.0.2", {\
-          "packageLocation": "./.yarn/cache/unist-util-remove-position-npm-4.0.2-5806d5548a-989831da91.zip/node_modules/unist-util-remove-position/",\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/unist-util-remove-position-npm-5.0.0-1f2a181e0a-8aabdb9d0e.zip/node_modules/unist-util-remove-position/",\
           "packageDependencies": [\
-            ["unist-util-remove-position", "npm:4.0.2"],\
-            ["@types/unist", "npm:2.0.10"],\
-            ["unist-util-visit", "npm:4.1.2"]\
+            ["unist-util-remove-position", "npm:5.0.0"],\
+            ["@types/unist", "npm:3.0.2"],\
+            ["unist-util-visit", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
