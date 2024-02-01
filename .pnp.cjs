@@ -32,7 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
             ["@astrojs/rss", "npm:3.0.0"],\
-            ["@astrojs/sitemap", "npm:3.0.3"],\
+            ["@astrojs/sitemap", "npm:3.0.5"],\
             ["@astrojs/tailwind", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:5.0.2"],\
             ["@pagefind/default-ui", "npm:1.0.4"],\
             ["@resvg/resvg-js", "npm:2.6.0"],\
@@ -335,10 +335,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@astrojs/sitemap", [\
-        ["npm:3.0.3", {\
-          "packageLocation": "./.yarn/cache/@astrojs-sitemap-npm-3.0.3-5201ca7252-8d2351ad12.zip/node_modules/@astrojs/sitemap/",\
+        ["npm:3.0.5", {\
+          "packageLocation": "./.yarn/cache/@astrojs-sitemap-npm-3.0.5-d9d50f5b0b-9ec3460129.zip/node_modules/@astrojs/sitemap/",\
           "packageDependencies": [\
-            ["@astrojs/sitemap", "npm:3.0.3"],\
+            ["@astrojs/sitemap", "npm:3.0.5"],\
             ["sitemap", "npm:7.1.1"],\
             ["zod", "npm:3.22.4"]\
           ],\
@@ -2638,7 +2638,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
             ["@astrojs/rss", "npm:3.0.0"],\
-            ["@astrojs/sitemap", "npm:3.0.3"],\
+            ["@astrojs/sitemap", "npm:3.0.5"],\
             ["@astrojs/tailwind", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:5.0.2"],\
             ["@pagefind/default-ui", "npm:1.0.4"],\
             ["@resvg/resvg-js", "npm:2.6.0"],\
