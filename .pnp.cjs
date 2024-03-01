@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
             ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
-            ["@astrojs/rss", "npm:3.0.0"],\
+            ["@astrojs/rss", "npm:4.0.5"],\
             ["@astrojs/sitemap", "npm:3.0.3"],\
             ["@astrojs/tailwind", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:5.0.2"],\
             ["@pagefind/default-ui", "npm:1.0.4"],\
@@ -324,10 +324,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@astrojs/rss", [\
-        ["npm:3.0.0", {\
-          "packageLocation": "./.yarn/cache/@astrojs-rss-npm-3.0.0-3949592242-b930bd63e8.zip/node_modules/@astrojs/rss/",\
+        ["npm:4.0.5", {\
+          "packageLocation": "./.yarn/cache/@astrojs-rss-npm-4.0.5-af5eb56b46-3e3275ad51.zip/node_modules/@astrojs/rss/",\
           "packageDependencies": [\
-            ["@astrojs/rss", "npm:3.0.0"],\
+            ["@astrojs/rss", "npm:4.0.5"],\
             ["fast-xml-parser", "npm:4.3.2"],\
             ["kleur", "npm:4.1.5"]\
           ],\
@@ -2637,7 +2637,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@astrojs/check", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:0.2.1"],\
             ["@astrojs/mdx", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:1.1.5"],\
             ["@astrojs/prefetch", "npm:0.4.1"],\
-            ["@astrojs/rss", "npm:3.0.0"],\
+            ["@astrojs/rss", "npm:4.0.5"],\
             ["@astrojs/sitemap", "npm:3.0.3"],\
             ["@astrojs/tailwind", "virtual:fbf98aba6886b4bbba20bf9f47531478913b4c9a1e7bd90466cd2bf5c0bf39e638ee88879e86755cc2c8da5957a379ebf323d21ff183cc9dd6ff0d07715effeb#npm:5.0.2"],\
             ["@pagefind/default-ui", "npm:1.0.4"],\
