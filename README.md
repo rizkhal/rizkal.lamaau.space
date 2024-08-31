@@ -1,1 +1,1 @@
-<h1 align="center">rizkhal.lamaau.space</h1>
+<h1 align="center">rizkal.lamaau.space</h1>
