@@ -2,6 +2,7 @@
 dist/
 .output/
 .data
+.yarn
 
 # dependencies
 node_modules/
