@@ -2,9 +2,9 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: "Rizkhal Lamaau",
+	author: "Rizkal Lamaau",
 	// Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
-	title: "Rizkhal Lamaau",
+	title: "Rizkal Lamaau",
 	// Meta property used as the default description meta property
 	description: "A love letter to the future",
 	// HTML lang property, found in src/layouts/Base.astro L:18
@@ -23,7 +23,7 @@ export const siteConfig: SiteConfig = {
 	// Include view-transitions: https://docs.astro.build/en/guides/view-transitions/
 	includeViewTransitions: false,
 	webmentions: {
-		link: "https://webmention.io/rizkhal.lamaau.space/webmention",
+		link: "https://webmention.io/rizkal.lamaau.space/webmention",
 	},
 };
 

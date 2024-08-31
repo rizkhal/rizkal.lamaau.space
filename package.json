@@ -11,7 +11,7 @@
 		"check": "astro check"
 	},
 	"engines": {
-		"node": "18.x"
+		"node": "22.x"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^1.1.1",
@@ -21,6 +21,7 @@
 		"@astrojs/tailwind": "^5.0.1",
 		"astro": "3.2.3",
 		"astro-icon": "^0.8.1",
+		"rehype-pretty-code": "^0.14.0",
 		"satori": "0.10.11",
 		"satori-html": "^0.3.2",
 		"sharp": "^0.32.6"
