@@ -26,7 +26,8 @@ export default defineConfig({
 		astroExpressiveCode({
 			plugins: [pluginLineNumbers()],
 			styleOverrides: {
-				codeFontFamily: "JetBrainsMono, Nerd Font, monolisa",
+				codeFontFamily:
+					"JetBrainsMono, Nerd Font, monolisa, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
 				codeFontSize: "0.875rem",
 				uiFontWeight: "600",
 				codeLineHeight: "2rem",
