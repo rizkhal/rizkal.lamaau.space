@@ -14,7 +14,7 @@
 		"check": "astro check"
 	},
 	"engines": {
-		"node": "14.x"
+		"node": "18.x"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "3.1.4",
