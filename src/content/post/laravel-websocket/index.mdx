@@ -1,11 +1,11 @@
 ---
 title: "Konfigurasi Websocket menggunakan Laravel Reverb"
 publishDate: "30 Aug 2024"
-description: "Websocket 100 kali lebih baik dari pada setInterval"
+description: "Pakai long pooling? Jangan yaaa dek yaaaa.."
 tags: ["laravel", "vue"]
 ---
 
-Laravel Reverb adalah _official package_ untuk membuat komunikasi _Real Time_ antara _Client_ dan _Server_.
+Laravel Reverb adalah _official package_ dari laravel untuk membuat komunikasi _Real Time_ antara _Client_ dan _Server_.
 
 Pada tulisan kali ini kita akan belajar bagaimana membuat koneksi sederhana antara client dan server.
 
@@ -21,7 +21,7 @@ Hal - hal yang akan kita pelajari antara lain
 
 <br />
 
-# Instalasi
+## Instalasi
 Saya menggunakan versi terbaru dari Laravel, saat saya menulis ini versi terakhir dari laravel adalah versi **11.x**.
 
 Saya juga menggunakan laravel jetstream starterkit dengan inertia sebagai proxy antara frontend dan backend
@@ -57,13 +57,15 @@ Yang terjadi setelah perintah diatas dieksekusi adalah
 
 <br />
 
-> Anda dapat membuat whitelist host yang dapat terkoneksi dengan websocket pada file `config/reverb.php` dengan menambahkan daftar host pada attribute `allowed_origins`.
+:::note
+Anda dapat membuat whitelist host yang dapat terkoneksi dengan websocket pada file `config/reverb.php` dengan menambahkan daftar host pada attribute `allowed_origins`.
+:::
 
 <br />
 
 Selanjutnya periksa konfigurasi pada file `.env`, akan terjadi beberapa perubahan, antara lain
 
-```bash
+```bash title=".env"
 BROADCAST_CONNECTION=reverb
 ...
 
@@ -82,7 +84,7 @@ VITE_REVERB_SCHEME="${REVERB_SCHEME}"
 
 Satu lagi yang ditambahkan oleh perintah diatas adalah file `resources/js/echo.js`
 
-```javascript
+```javascript title="echo.js"
 import Echo from 'laravel-echo';
 import Pusher from 'pusher-js';
 
@@ -102,7 +104,7 @@ window.Echo = new Echo({
 File echo menulis konfigurasi untuk menghubungkan antara Client dan Server, file echo ini kemudian di-import kedalam file bootstrap.js sehingga object Echo dapat diakses dari semua file javascript dan vue
 <br />
 
-# Konfigurasi Event
+## Konfigurasi Event
 
 Buat event baru
 
@@ -126,41 +128,34 @@ Di laravel sendiri terdapat 3 (tiga) channel, berikut perbedaan dan contoh kasus
 
     - **Presence Channel**: Realtime collaboration, grup chat atau memberikan informasi pengguna yang sedang aktif secara realtime
 
-Lanjut, buka file `app/Events/UserCreated.php` ubah channel yang digunakan.
+Lanjut, buka file `app/Events/UserCreated.php` dan ubah channel yang digunakan.
 
-Sebelum diubah
-
-```php
+```php title="UserCreated.php" ins={2,7} del={1,4,5,6}
 public function broadcastOn(): array
+public function broadcastOn(): Channel
 {
     return [
         new PrivateChannel('channel-name'),
     ];
-}
-```
-
-Setelah diubah
-
-```php
-public function broadcastOn(): Channel
-{
     return new Channel('user-created');
 }
 ```
 
-Selanjutnya, kita daftarkan event yang telah kita buat untuk men-trigger broadcasting.
+Selanjutnya, daftarkan event yang telah dibuat untuk men-trigger broadcasting.
 
 Karena pada contoh kali ini kita menggunakan Public Channel dengan event UserCreated, maka event ini akan ditriger saat ada user baru yang membuat atau dibuatkan akun.
 
 <br />
 
-> Anda dapat menggunakan observer, event listener, booted method pada model dan atau cara lainnya untuk mendaftarkan event
+:::note
+Anda dapat menggunakan observer, event listener, booted method pada model dan atau cara lainnya untuk mendaftarkan event
+:::
 
 <br />
 
 Selanjutnya tambahkan property `$dispatchesEvents` pada file `app/Models/User.php` seperti pada potongan kode dibawah
 
-```php
+```php title="User.php"
 protected $dispatchesEvents = [
     'created' => \App\Events\UserCreated::class,
 ];
@@ -170,7 +165,7 @@ Karena saya mendaftarkan event ini pada model `User.php` dengan _magic property 
 
 Agar user yang ter-created dikirim ke frontend menggunakan websocket, buka kembali file `app/Events/UserCreated.php` dan tambahkan paremeter `User $user` yang akan kita terima dari default _lifecycle hook_ - nya laravel.
 
-```php
+```php title="UserCreated.php"
 public function __construct(
     public User $user,
 ) {
@@ -180,9 +175,9 @@ public function __construct(
 
 Sekarang user yang ter-created dapat diterima di frontend dengan bantuan package laravel-echo.
 
-Selanjutnya buka file `Dashboard.vue`
+Selanjutnya buka file `Dashboard.vue` dan tambahkan potongan kode dibawah ini untuk melihat _event_ yang dikirim dari backend.
 
-```javascript
+```javascript title="Dasbhoard.vue"
 window.Echo.channel("user-created").listen("UserCreated", (event) => {
     console.log(event);
 });
@@ -192,7 +187,7 @@ Argunent dalam fungsi channel `(user-created)` adalah argument yang sama dalam m
 
 <br />
 
-# Uji Coba Websocket
+## Uji Coba Websocket
 
 Build frontend dengan perintah
 
@@ -227,6 +222,6 @@ Kemudian secara realtime menampilkan di-log browser data user yang kita kirim da
 
 <br />
 
-# Video Demo
+## Video Demo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EyrqOBxlb3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
