@@ -68,8 +68,6 @@ Ok, kita telah berhasil melakukan instalasi **package - package** yang dibutuhka
 
 Kita akan mulai dengan membuat antar muka pengguna, buka file `resources/js/Components/Welcome.vue`
 
-Import dan buat property untuk model
-
 ```vue title="Welcome.vue" add={2,3,6,8,9,10}
 <script setup>
 import { onMounted, ref } from "vue";
@@ -84,7 +82,7 @@ const form = useForm({
 </script>
 ```
 
-Buat form
+Hapus semua script yang ada dan ubah dengan potongan kode dibawah ini
 
 ```vue title="Dashboard.vue"
 <template>
@@ -119,3 +117,129 @@ Buat form
     </div>
 </template>
 ```
+
+Jika sudah, form akan terlihat seperti pada gambar dibawah
+
+![Gambar 1](./assets/1.png)
+
+Selanjutnya buat controller, buat dengan argument `--invokable` karena kita hanya butuh satu fungsi untuk meng-handle file yang diunggah
+
+```bash
+php artisan make:controller UserImportController --invokable
+```
+
+Daftarkan routing kita didalam middleware `jetstream.auth_session`
+
+```php title="web.php" add={3}
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
+    Route::get('/dashboard',  fn() => Inertia::render('Dashboard'))->name('dashboard');
+    Route::post('user-import', App\Http\Controllers\UserImportController::class)->name('user-import');
+});
+```
+
+Lanjutkan dengan membuat fungsi untuk meng-handle file yang diunggah
+
+Sesuaikan file UserImportController yang tadi seperti pada potongan kode dibawah ini
+
+```php title="UserImportController.php" add={3-5,7-12}
+public function __invoke(Request $request)
+{
+    $request->validate([
+        'file' => ['required', 'file'],
+    ]);
+
+    try {
+        $file = $request->file('file')->store('users');
+        return back();
+    } catch (\Throwable $th) {
+        return back()->with(['error' => $th->getMessage()]);
+    }
+}
+```
+
+Sekarang kembali ke file `Welcome.vue` untuk buat fungsi unggah file ke server
+
+```js title="Welcome.vue" add={1-8}
+const submit = () => {
+    form.post(route("user-import"), {
+        onSuccess: () => {
+            form.reset();
+            inputFile.value.value = null;
+        },
+    });
+};
+```
+
+Tambahkan juga fungsi `submit` pada tombol import file
+
+```vue title="Welcome.vue" add={2}
+<button
+    @click="submit"
+    class="w-max cursor-pointer py-2 px-4 bg-indigo-500 capitalize rounded-md text-white"
+>
+    import file
+</button>
+```
+
+Sekarang kita sudah bisa mengunggah file ke server. Lanjut dengan membuat file impor
+
+```bash
+php artisan make:import UserImport
+```
+
+Buka dan sesuaikan file `UserImport.php`
+
+```php title="UserImport.php" add={7-17,20} del={5-6,19,22-28}
+<?php
+
+namespace App\Imports;
+
+use Illuminate\Support\Collection;
+use Maatwebsite\Excel\Concerns\ToCollection;
+use App\Models\User;
+use Illuminate\Support\Str;
+use App\Events\UserImportProgress;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Cache;
+use Maatwebsite\Excel\Concerns\ToModel;
+use Maatwebsite\Excel\Concerns\Importable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Maatwebsite\Excel\Concerns\SkipsOnError;
+use Maatwebsite\Excel\Concerns\WithChunkReading;
+
+class UserImport implements ToCollection
+class UserImport implements ToModel, WithChunkReading, ShouldQueue, SkipsOnError
+{
+    /**
+    * @param Collection $collection
+    */
+    public function collection(Collection $collection)
+    {
+        //
+    }
+}
+```
+
+Kita akan ubah menggunakan model
+
+```php title="UserImport.php" add={1-15}
+public function model(array $row)
+{
+    $name = $row[1];
+
+    $baseEmail = Str::snake($name) . '@test.com';
+    $uniqueEmail = Str::before($baseEmail, '@') . '_' . time() . '@test.com';
+
+    $user = new User([
+        'name' => $name,
+        'email' => $uniqueEmail,
+        'password' => Hash::make($name),
+    ]);
+
+    return $user;
+}
+```
+
+Karena tidak ada kolom email pada file excel, maka saya membuat `unique email` menggunakan username seperti pada potongan kode diatas.
+Ada dapat meng-unduh file excel [disini](./assets/sample.xlsx)
