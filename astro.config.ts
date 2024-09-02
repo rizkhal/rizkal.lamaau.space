@@ -5,8 +5,6 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
 import astroExpressiveCode from "astro-expressive-code";
-import { expressiveCodeOptions } from "./src/site.config";
-import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 
 // Remark plugins
 import remarkDirective from "remark-directive"; /* Handle ::: directives as nodes */
@@ -24,7 +22,6 @@ export default defineConfig({
 	},
 	integrations: [
 		astroExpressiveCode({
-			plugins: [pluginLineNumbers()],
 			styleOverrides: {
 				codeFontFamily:
 					"JetBrainsMono, Nerd Font, monolisa, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
