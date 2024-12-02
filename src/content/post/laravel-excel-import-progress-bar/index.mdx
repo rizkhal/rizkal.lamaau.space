@@ -17,6 +17,10 @@ draft: true
 
 Berikut informasi singkat terkait **package** yang digunakan
 
+### Tech Stack
+
+Saya asumsikan pembaca telah familiar dengan hal - hal yang digunakan berikut.
+
 - PHP v8.3
 - Laravel v11.x
 - Tailwind v3
@@ -24,7 +28,10 @@ Berikut informasi singkat terkait **package** yang digunakan
 - Laravel Excel v3.1
 - Laravel Jetsream  v5.x (Stack inertia + vue)
 
-Saya asumsikan pembaca telah familiar dengan hal - hal yang digunakan diatas.
+### Data pendukung
+Berikut data pendukung yang akan digunakan untuk simulasi impor file excel dengan queue dan progres bar
+
+[File excel]()
 
 ## Instalasi
 
@@ -82,7 +89,7 @@ const form = useForm({
 </script>
 ```
 
-Hapus semua script yang ada dan ubah dengan potongan kode dibawah ini
+Sesuaikan `script` yang ada menjadi seperti potongan kode dibawah ini
 
 ```vue title="Dashboard.vue"
 <template>
@@ -118,11 +125,13 @@ Hapus semua script yang ada dan ubah dengan potongan kode dibawah ini
 </template>
 ```
 
-Jika sudah, form akan terlihat seperti pada gambar dibawah
+Jika sudah sesuai, form akan terlihat seperti pada gambar dibawah ini
 
 ![Gambar 1](./assets/1.png)
 
-Selanjutnya buat controller, buat dengan argument `--invokable` karena kita hanya butuh satu fungsi untuk meng-handle file yang diunggah
+## Unggah File
+
+Selanjutnya buat controller dengan argument `--invokable` karena kita hanya butuh satu fungsi untuk meng-handle file yang diunggah
 
 ```bash
 php artisan make:controller UserImportController --invokable
@@ -139,7 +148,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
 Lanjutkan dengan membuat fungsi untuk meng-handle file yang diunggah
 
-Sesuaikan file UserImportController yang tadi seperti pada potongan kode dibawah ini
+Sesuaikan file `UserImportController.php` yang tadi seperti pada potongan kode dibawah ini
 
 ```php title="UserImportController.php" add={3-5,7-12}
 public function __invoke(Request $request)
@@ -183,13 +192,15 @@ Tambahkan juga fungsi `submit` pada tombol import file
 
 Sekarang kita sudah bisa mengunggah file ke server. Lanjut dengan membuat file impor
 
+## Impor
+
 ```bash
 php artisan make:import UserImport
 ```
 
 Buka dan sesuaikan file `UserImport.php`
 
-```php title="UserImport.php" add={7-17,20} del={5-6,19,22-28}
+```php title="UserImport.php" add={7-12,15} del={14,17-23}
 <?php
 
 namespace App\Imports;
@@ -199,17 +210,12 @@ use Maatwebsite\Excel\Concerns\ToCollection;
 use App\Models\User;
 use Illuminate\Support\Str;
 use App\Events\UserImportProgress;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Cache;
 use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\Importable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Maatwebsite\Excel\Concerns\SkipsOnError;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
 
 class UserImport implements ToCollection
-class UserImport implements ToModel, WithChunkReading, ShouldQueue, SkipsOnError
+class UserImport implements ToModel, ShouldQueue
 {
     /**
     * @param Collection $collection
@@ -221,25 +227,20 @@ class UserImport implements ToModel, WithChunkReading, ShouldQueue, SkipsOnError
 }
 ```
 
-Kita akan ubah menggunakan model
+Ubah menggunakan `method` model karena kita meng-implementasi-kan `interface` `ToModel`
 
 ```php title="UserImport.php" add={1-15}
 public function model(array $row)
 {
     $name = $row[1];
-
-    $baseEmail = Str::snake($name) . '@test.com';
-    $uniqueEmail = Str::before($baseEmail, '@') . '_' . time() . '@test.com';
+    $email = strtolower($name) . '@test.com';
 
     $user = new User([
         'name' => $name,
-        'email' => $uniqueEmail,
+        'email' => $email,
         'password' => Hash::make($name),
     ]);
 
     return $user;
 }
 ```
-
-Karena tidak ada kolom email pada file excel, maka saya membuat `unique email` menggunakan username seperti pada potongan kode diatas.
-Ada dapat meng-unduh file excel [disini](./assets/sample.xlsx)
